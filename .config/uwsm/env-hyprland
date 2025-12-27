@@ -1,0 +1,5 @@
+for f in "${XDG_CONFIG_HOME:-$HOME/.config}"/uwsm/env-hyprland.d/*.{,z}sh; do
+  if [[ -r "$f" ]]; then
+    source "$f"
+  fi
+done

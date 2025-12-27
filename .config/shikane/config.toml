@@ -1,0 +1,50 @@
+[[profile]]
+  name = "docked-office-single_monitor"
+  exec = ["notify-send shikane \"Profile $SHIKANE_PROFILE_NAME applied.\""]
+  [[profile.output]]
+    enable = false
+    search = ["d%BOE 0x0BB7", "n/eDP-[1-9]", "m=0x0BB7", "s=", "v=BOE"]
+  [[profile.output]]
+    # additional search terms:
+    # "m=QCQ90", "n/HDMI-[A-Z]-[1-9]", "v=Samsung Electric Company"
+    enable        = true
+    search        = ["d%Samsung Electric Company QCQ90 0x01000E00", "s=0x01000E00"]
+    mode          = "3840x2160@119.88Hz"
+    position      = "0,0"
+    scale         = 1.0
+    transform     = "normal"
+    adaptive_sync = false
+
+[[profile]]
+  name = "docked-office-multi_monitor"
+  exec = ["notify-send shikane \"Profile $SHIKANE_PROFILE_NAME applied.\""]
+  [[profile.output]]
+    enable        = true
+    search        = ["d%BOE 0x0BB7", "n/eDP-[1-9]", "m=0x0BB7", "s=", "v=BOE"]
+    mode          = "3840x2160@144.0Hz"
+    position      = "3840,1080"
+    scale         = 2.0
+    transform     = "normal"
+    adaptive_sync = false
+  [[profile.output]]
+    # additional search terms:
+    # "m=QCQ90", "n/HDMI-[A-Z]-[1-9]", "v=Samsung Electric Company"
+    enable        = true
+    search        = ["d%Samsung Electric Company QCQ90 0x01000E00", "s=0x01000E00"]
+    mode          = "3840x2160@119.88Hz"
+    position      = "0,0"
+    scale         = 1.0
+    transform     = "normal"
+    adaptive_sync = false
+
+[[profile]]
+  name = "undocked"
+  exec = ["notify-send shikane \"Profile $SHIKANE_PROFILE_NAME applied.\""]
+  [[profile.output]]
+    enable        = true
+    search        = ["d%BOE 0x0BB7", "n/eDP-[1-9]", "m=0x0BB7", "s=", "v=BOE"]
+    mode          = "3840x2160@144.0Hz"
+    position      = "3840,1080"
+    scale         = 2.0
+    transform     = "normal"
+    adaptive_sync = false

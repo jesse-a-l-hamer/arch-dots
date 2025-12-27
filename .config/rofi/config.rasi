@@ -1,0 +1,21 @@
+configuration {
+    drun {
+        display-name: "  ";
+    }
+    run {
+        display-name: "  ";
+    }
+    window {
+        display-name: "  ";
+    }
+    ssh {
+        display-name: " 󰣀 ";
+    }
+    keys {
+        display-name: "  ";
+    }
+    window-format: "{t} <span weight='light' size='small'><i>{c}</i></span>";
+    terminal: "kitty";
+    ssh-command: "kitten ssh";
+}
+@theme "catppuccin-default"

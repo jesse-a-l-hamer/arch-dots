@@ -10,3 +10,30 @@
 [submodule ".config/zsh"]
 	path = .config/zsh
 	url = https://github.com/jesse-a-l-hamer/zsh-dots
+[submodule ".config/catppuccin-themes/hyprland"]
+	path = .config/catppuccin-themes/hyprland
+	url = https://github.com/catppuccin/hyprland
+[submodule ".config/catppuccin-themes/plymouth"]
+	path = .config/catppuccin-themes/plymouth
+	url = https://github.com/catppuccin/plymouth
+[submodule ".config/catppuccin-themes/thunderbird"]
+	path = .config/catppuccin-themes/thunderbird
+	url = https://github.com/catppuccin/thunderbird
+[submodule ".config/catppuccin-themes/waybar"]
+	path = .config/catppuccin-themes/waybar
+	url = https://github.com/catppuccin/waybar
+[submodule ".config/catppuccin-themes/wlogout"]
+	path = .config/catppuccin-themes/wlogout
+	url = https://github.com/catppuccin/wlogout
+[submodule ".config/catppuccin-themes/zen-browser"]
+	path = .config/catppuccin-themes/zen-browser
+	url = https://github.com/catppuccin/zen-browser
+[submodule ".config/mpv/.config/mpv"]
+	path = .config/mpv/.config/mpv
+	url = https://github.com/jesse-a-l-hamer/mpv-dots
+[submodule ".config/mpv"]
+	path = .config/mpv
+	url = https://github.com/jesse-a-l-hamer/mpv-dots
+[submodule ".config/yazi"]
+	path = .config/yazi
+	url = https://github.com/jesse-a-l-hamer/yazi-dots

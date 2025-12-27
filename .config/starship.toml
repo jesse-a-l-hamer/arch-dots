@@ -1,0 +1,222 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# see https://github.com/catppuccin/starship/discussions/15 for following config
+
+palette = "catppuccin_macchiato"
+
+# custom format
+format = '''
+[╭─ $os$shell${env_var.yazi_level}─────────────── $memory_usage ──╌╌](overlay0) $nodejs$lua$python$typst$golang$rust$haskell$ocaml$fill[$time ─╮](overlay0)
+[├╌](overlay0) $sudo$username$hostname$localip$directory$git_branch$git_metrics$fill[$cmd_duration ─╯ ](overlay0)
+[╰─ $battery $character](overlay0)
+'''
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+scan_timeout = 10
+command_timeout = 500
+add_newline = true
+
+[palettes.catppuccin_macchiato]
+rosewater = "#f4dbd6"
+flamingo = "#f0c6c6"
+pink = "#f5bde6"
+mauve = "#c6a0f6"
+red = "#ed8796"
+maroon = "#ee99a0"
+peach = "#f5a97f"
+yellow = "#eed49f"
+green = "#a6da95"
+teal = "#8bd5ca"
+sky = "#91d7e3"
+sapphire = "#7dc4e4"
+blue = "#8aadf4"
+lavender = "#b7bdf8"
+text = "#cad3f5"
+subtext1 = "#b8c0e0"
+subtext0 = "#a5adcb"
+overlay2 = "#939ab7"
+overlay1 = "#8087a2"
+overlay0 = "#6e738d"
+surface2 = "#5b6078"
+surface1 = "#494d64"
+surface0 = "#363a4f"
+base = "#24273a"
+mantle = "#1e2030"
+crust = "#181926"
+
+[shell]
+fish_indicator = 'fish'
+bash_indicator = 'bash'
+unknown_indicator = 'unknwn'
+style = 'teal'
+format = ' [$indicator]($style) '
+disabled = false
+
+[os]
+style = 'teal'
+disabled = false
+
+[username]
+style_user = 'teal bold'
+format = '[$user@]($style)'
+disabled = false
+show_always = true
+
+[sudo]
+symbol = ' '
+format = '[$symbol](bold red)'
+disabled = false
+
+[nodejs]
+format = '[Node](bold lavender) [$version](bold dimmed lavender) '
+
+[lua]
+symbol = ' '
+format = '[$symbol](bold lavender) [$version](bold dimmed lavender) '
+
+[python]
+symbol = ' '
+format = '[$symbol](bold mauve) [$version [\($virtualenv\)](dimmed mauve)](dimmed mauve) '
+
+[typst]
+symbol = " "
+format = '[$symbol](bold mauve) [$version](dimmed mauve) '
+
+[golang]
+format = '[Go](bold lavender) [$version](bold dimmed lavender) '
+
+[rust]
+symbol = ' '
+format = '[$symbol](bold lavender) [$version](bold dimmed lavender) '
+
+[ocaml]
+format = '[Ocaml](bold pink) [$version](bold dimmed pink) '
+
+[haskell]
+symbol = ' '
+format = '[$symbol](bold pink) [$version](bold dimmed pink) '
+
+[memory_usage]
+disabled = false
+threshold = -1
+format = '[$symbol$ram_pct]($style)'
+symbol = '󰍛 '
+style = 'dimmed blue'
+
+[localip]
+ssh_only = false
+format = '[@$localipv4](bold dimmed blue) '
+disabled = false
+
+[hostname]
+ssh_only = false
+ssh_symbol = ' '
+format = '[$ssh_symbol](bold dimmed maroon)[$hostname](bold dimmed sapphire) '
+trim_at = ''
+disabled = false
+
+[git_metrics]
+disabled = false
+format = ' [+$added](bold teal)[-$deleted](bold pink) '
+
+[git_branch]
+symbol = ' '
+format = '[$branch(:$remote_branch)]($style) '
+style = 'bold pink'
+
+[fill]
+symbol = '╌'
+style = 'overlay0'
+
+# time of command
+[cmd_duration]
+min_time = 500
+format = ' [$duration](bold dimmed flamingo)'
+
+[time]
+disabled = false
+format = ' [$time](bold dimmed flamingo)'
+
+[directory]
+fish_style_pwd_dir_length = 5
+disabled = false
+truncation_length = 5
+truncation_symbol = '…/'
+read_only = ' 󰌾 '
+read_only_style = 'bold dimmed mauve'
+style = 'bold mauve'
+
+# prompt char
+[character]
+success_symbol = '[──╌╌](overlay0)'
+error_symbol = '[──╌╌](red)'
+vimcmd_symbol = '[──╌╌](teal)'
+
+[env_var.yazi_level]
+description = "Indicate that the shell was launched by `yazi`"
+variable = "YAZI_LEVEL"
+symbol = "󰇥"
+style = 'bold dimmed green'
+format = '[ $symbol ]($style) '
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+
+# battery
+[battery]
+
+full_symbol = '● '
+charging_symbol = '◉ '
+discharging_symbol = '◯ '
+
+[[battery.display]]
+threshold = 20
+style = 'red'
+
+[[battery.display]]
+threshold = 100
+style = 'teal'
+
+[os.symbols]
+Alpaquita = " "
+Alpine = " "
+Amazon = " "
+Android = " "
+Arch = " "
+Artix = " "
+CentOS = " "
+Debian = " "
+DragonFly = " "
+Emscripten = " "
+EndeavourOS = " "
+Fedora = " "
+FreeBSD = " "
+Garuda = "󰛓 "
+Gentoo = " "
+HardenedBSD = "󰞌 "
+Illumos = "󰈸 "
+Linux = " "
+Mabox = " "
+Macos = " "
+Manjaro = " "
+Mariner = " "
+MidnightBSD = " "
+Mint = " "
+NetBSD = " "
+NixOS = " "
+OpenBSD = "󰈺 "
+openSUSE = " "
+OracleLinux = "󰌷 "
+Pop = " "
+Raspbian = " "
+Redhat = " "
+RedHatEnterprise = " "
+Redox = "󰀘 "
+Solus = "󰠳 "
+SUSE = " "
+Ubuntu = " "
+Unknown = " "
+Windows = "󰍲 "

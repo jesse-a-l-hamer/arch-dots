@@ -1,0 +1,9 @@
+export APP2UNIT_SLICES='a=app-graphical.slice b=background-graphical.slice s=session-graphical.slice'
+export CURSOR_THEME=catppuccin-macchiato-dark-cursors
+export CURSOR_SIZE=24
+
+for f in ${XDG_CONFIG_HOME:-$HOME/.config}/uwsm/env.d/*.{,z}sh; do
+  if [[ -r "$f" ]]; then
+    source "$f"
+  fi
+done

@@ -1,0 +1,13 @@
+[Unit]
+Description=Performs a single reconnect of Mullvad VPN on session start.
+Documentation=https://mullvad.net/en/help
+After=default.target
+
+[Service]
+Type=oneshot
+ExecStart=mullvad reconnect
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=default.target
