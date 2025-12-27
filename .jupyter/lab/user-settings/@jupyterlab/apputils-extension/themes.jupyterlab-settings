@@ -1,0 +1,15 @@
+{
+    "theme": "Catppuccin Macchiato",
+    "adaptive-theme": false,
+    "preferred-light-theme": "Catppuccin Latte",
+    "preferred-dark-theme": "Catppuccin Macchiato",
+    "theme-scrollbars": true,
+    "overrides": {
+        "code-font-family": "VictorMono Nerd Font",
+        "code-font-size": null,
+        "content-font-family": "VictorMono Nerd Font Propo",
+        "content-font-size1": null,
+        "ui-font-family": "VictorMono Nerd Font Propo",
+        "ui-font-size1": null
+    }
+}
