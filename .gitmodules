@@ -7,3 +7,6 @@
 [submodule ".config/hypr"]
 	path = .config/hypr
 	url = https://github.com/jesse-a-l-hamer/hyprland-dots
+[submodule ".config/zsh"]
+	path = .config/zsh
+	url = https://github.com/jesse-a-l-hamer/zsh-dots
