@@ -1,3 +1,6 @@
 [submodule ".config/nvim"]
 	path = .config/nvim
 	url = https://github.com/jesse-a-l-hamer/neovim-dots
+[submodule ".config/waybar"]
+	path = .config/waybar
+	url = https://github.com/jesse-a-l-hamer/waybar-dots
