@@ -1,1 +1,0 @@
-/home/jalhamer/.config/zsh/.zshenv.d/rich-cli.zsh
