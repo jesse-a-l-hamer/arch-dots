@@ -4,3 +4,6 @@
 [submodule ".config/waybar"]
 	path = .config/waybar
 	url = https://github.com/jesse-a-l-hamer/waybar-dots
+[submodule ".config/hypr"]
+	path = .config/hypr
+	url = https://github.com/jesse-a-l-hamer/hyprland-dots
