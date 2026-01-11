@@ -1,0 +1,19 @@
+#!/bin/sh
+# see: https://wiki.hypr.land/Hypr-Ecosystem/xdg-desktop-portal-hyprland/#usage
+
+sleep 1
+killall -e xdg-desktop-portal-hyprland
+killall -e xdg-desktop-portal-gtk
+killall -e xdg-desktop-portal-termfilechooser
+killall xdg-desktop-portal
+
+app2unit -s s -t service -- /usr/lib/xdg-desktop-portal-hyprland &
+sleep 2
+
+app2unit -s s -t service -- /usr/lib/xdg-desktop-portal-gtk &
+sleep 2
+
+app2unit -s s -t service -- /usr/lib/xdg-desktop-portal-termfilechooser &
+sleep 2
+
+app2unit -s s -t service -- /usr/lib/xdg-desktop-portal &
