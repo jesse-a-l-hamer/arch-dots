@@ -1,0 +1,271 @@
+force_keyboard_focus      = false     # forces keyboard forcus to stay in Walker
+close_when_open           = true      # close walker when invoking while already opened
+click_to_close            = true      # closes walker if clicking outside of the main content area
+single_click_activation   = true      # activate items with a single click opposed to a double click
+selection_wrap            = true      # wrap list if at bottom or top
+global_argument_delimiter = "#"       # query: firefox#https://benz.dev => part after delimiter will be ignored when querying. this should be the same as in the elephant config
+exact_search_prefix       = "'"       # disable fuzzy searching
+theme                     = "default" # theme to use
+disable_mouse             = false     # disable mouse (on input and list only)
+debug                     = false     # enables debug printing for some stuff, f.e. keybinds
+page_jump_items           = 10        # number of items to skip with Page Up/Down
+hide_quick_activation     = false     # globally hide the quick activation buttons
+hide_action_hints         = false     # globally hide the action hints
+hide_action_hints_dmenu   = true      # hide the actions hints for dmenu
+hide_return_action        = false     # hide actions that are bound to Return
+resume_last_query         = false     # open walker with the last query in place
+actions_as_menu           = true      # display all possible actions in a submenu
+
+[shell]
+  anchor_top    = true
+  anchor_bottom = true
+  anchor_left   = true
+  anchor_right  = true
+
+[columns]
+  "symbols" = 3
+  "unicode" = 3
+
+[keybinds]
+  close             = ["Escape", "ctrl q"]
+  next              = ["Down", "ctrl n"]
+  previous          = ["Up", "ctrl p"]
+  left              = ["Left", "ctrl h"]
+  right             = ["Right", "ctrl l"]
+  down              = ["Down", "ctrl j"]
+  up                = ["Up", "ctrl k"]
+  toggle_exact      = ["ctrl grave"]
+  resume_last_query = ["ctrl r"]
+  quick_activate    = ["ctrl 1", "ctrl 2", "ctrl 3", "ctrl 4"]
+  page_down         = ["ctrl d"]
+  page_up           = ["ctrl u"]
+  show_actions      = ["ctrl shift slash"]
+
+[placeholders]
+  "default"             = { input = "Prefixes: [;>/.!%=@:$^]", list = "No Results" }
+  "desktopapplications" = { input = "Launch App", list = "No Applications" }
+  "files"               = { input = "Browse Files", list = "No Files Found" }
+  "calc"                = { input = "Calculate", list = "Enter Expression" }
+  "runner"              = { input = "Run Command", list = "No Commands" }
+  "websearch"           = { input = "Search Web", list = "" }
+  "clipboard"           = { input = "Clipboard", list = "Clipboard Empty" }
+  "symbols"             = { input = "Symbol", list = "No Symbols" }
+  "todo"                = { input = "Todo", list = "No Todos" }
+  "archlinuxpkgs"       = { input = "Search Packages", list = "No Packages" }
+
+[providers]
+  default = [
+    "desktopapplications",
+    "calc",
+    "menus",
+    "websearch",
+  ] # providers to be queried by default
+  empty = ["desktopapplications"] # providers to be queried when query is empty
+  ignore_preview = [] # providers that should not show previews
+  max_results = 50 # global max results
+
+  [providers.argument_delimiter] # define the argument delimiter per provider
+    runner = " "
+
+  [providers.sets] # define your own defaults/empty sets of providers
+
+    [providers.sets.files]
+      default = ["files", "runner"]
+      empty   = ["files"]
+
+    [providers.sets.symbols]
+      default = ["symbols", "unicode"]
+      empty   = ["symbols"]
+
+  [providers.max_results_provider] # define max results per provider in here
+
+  [[providers.prefixes]]
+    prefix   = ";"
+    provider = "providerlist"
+
+  [[providers.prefixes]]
+    prefix   = ">"
+    provider = "runner"
+
+  [[providers.prefixes]]
+    prefix   = "/"
+    provider = "files"
+
+  [[providers.prefixes]]
+    prefix   = "."
+    provider = "symbols"
+
+  [[providers.prefixes]]
+    prefix   = "!"
+    provider = "todo"
+
+  [[providers.prefixes]]
+    prefix   = "%"
+    provider = "bookmarks"
+
+  [[providers.prefixes]]
+    prefix   = "="
+    provider = "calc"
+
+  [[providers.prefixes]]
+    prefix   = "@"
+    provider = "websearch"
+
+  [[providers.prefixes]]
+    prefix   = ":"
+    provider = "clipboard"
+
+  [[providers.prefixes]]
+    prefix   = "$"
+    provider = "windows"
+
+  [[providers.prefixes]]
+    prefix   = "^"
+    provider = "archlinuxpkgs"
+
+  [providers.clipboard]
+    time_format = "%m-%d - %H:%M:%S" # format for the clipboard item date
+
+  [providers.actions] # This will be MERGED/OVEWRITTEN with what the user specifies
+    fallback = [
+      { action = "menus:open", label = "open", bind = "ctrl y", after = "Nothing" },
+      { action = "menus:default", label = "run", bind = "ctrl y", after = "Close" },
+      { action = "menus:default", label = "run (keep open)", bind = "shift ctrl y", after = "KeepOpen" },
+      { action = "menus:parent", label = "back", bind = "ctrl BackSpace", after = "Nothing" },
+      { action = "erase_history", label = "clear hist", bind = "ctrl shift e", after = "AsyncReload" },
+    ]
+
+    "menus:other" = [
+      { action = "cp_use", label = "use", bind = "ctrl y", after = "Close" },
+      { action = "zoom_use", label = "use", bind = "ctrl y", after = "Close" },
+      { action = "volume_raise", label = "raise", bind = "ctrl plus", after = "AsyncReload" },
+      { action = "volume_lower", label = "lower", bind = "ctrl minus", after = "AsyncReload" },
+      { action = "volume_mute", label = "mute/unmute", bind = "ctrl m", after = "Close" },
+      { action = "volume_unmute", label = "mute/unmute", bind = "ctrl m", after = "Close" },
+      { action = "volume_set", label = "set", bind = "ctrl y", after = "Close" },
+      { action = "disk_copy", label = "copy", bind = "ctrl y", after = "Close" },
+      { action = "mic_set", label = "set", bind = "ctrl y", after = "Close" },
+      { action = "open_cal", label = "open calendar", bind = "ctrl y", after = "Close" },
+    ]
+
+    "menus:screenshots" = [
+      { action = "view", label = "view", bind = "ctrl y", after = "Close" },
+      { action = "annotate", label = "annotate", bind = "ctrl y", after = "Close" },
+      { action = "record_region", label = "toggle", bind = "ctrl y", after = "Close" },
+      { action = "record_window", label = "toggle", bind = "ctrl y", after = "Close" },
+      { action = "record_monitor", label = "toggle", bind = "ctrl y", after = "Close" },
+      { action = "stop_record", label = "stop", bind = "ctrl y", after = "Close" },
+      { action = "ocr", label = "screenshot", bind = "ctrl y", after = "Close" },
+      { action = "region_clipboard", label = "screenshot", bind = "ctrl y", after = "Close" },
+      { action = "region_save", label = "screenshot", bind = "ctrl y", after = "Close" },
+      { action = "window_clipboard", label = "screenshot", bind = "ctrl y", after = "Close" },
+      { action = "window_save", label = "screenshot", bind = "ctrl y", after = "Close" },
+      { action = "monitor_clipboard", label = "screenshot", bind = "ctrl y", after = "Close" },
+      { action = "monitor_save", label = "screenshot", bind = "ctrl y", after = "Close" },
+    ]
+
+    dmenu = [{ action = "select", default = true, bind = "ctrl y" }]
+
+    providerlist = [
+      { action = "activate", default = true, bind = "ctrl y", after = "ClearReload" },
+    ]
+
+    bluetooth = [
+      { action = "find", bind = "ctrl f", after = "AsyncClearReload" },
+      { action = "remove", bind = "ctrl x", after = "AsyncReload" },
+      { action = "trust", bind = "ctrl t", after = "AsyncReload" },
+      { action = "untrust", bind = "ctrl t", after = "AsyncReload" },
+      { action = "pair", bind = "ctrl y", after = "AsyncReload" },
+      { action = "connect", default = true, bind = "ctrl y", after = "AsyncReload" },
+      { action = "disconnect", default = true, bind = "ctrl y", after = "AsyncReload" },
+    ]
+
+    archlinuxpkgs = [
+      { action = "install", bind = "ctrl y", default = true },
+      { action = "remove", bind = "ctrl y" },
+      { action = "show_all", label = "show all", bind = "ctrl s", after = "AsyncClearReload" },
+      { action = "refresh", label = "refresh", bind = "ctrl shift r", after = "AsyncReload" },
+      { action = "visit_url", label = "open URL", bind = "ctrl o" },
+      { action = "show_installed", label = "show installed", bind = "ctrl s", after = "AsyncClearReload" },
+    ]
+
+    calc = [
+      { action = "copy", default = true, bind = "ctrl y" },
+      { action = "delete", bind = "ctrl x", after = "AsyncReload" },
+      { action = "save", bind = "ctrl s", after = "AsyncClearReload" },
+    ]
+
+    websearch = [
+      { action = "search", default = true, bind = "ctrl y" },
+      { action = "open_url", label = "open url", default = true, bind = "ctrl y" },
+    ]
+
+    desktopapplications = [
+      { action = "start", default = true, bind = "ctrl y" },
+      { action = "start:keep", label = "open+next", bind = "shift ctrl y", after = "KeepOpen" },
+      { action = "new_instance", label = "new instance", bind = "alt ctrl y" },
+      { action = "new_instance:keep", label = "new+next", bind = "shift alt ctrl y", after = "KeepOpen" },
+      { action = "pin", bind = "ctrl shift p", after = "AsyncReload" },
+      { action = "unpin", bind = "ctrl shift p", after = "AsyncReload" },
+      { action = "pinup", bind = "ctrl shift k", after = "AsyncReload" },
+      { action = "pindown", bind = "ctrl shift j", after = "AsyncReload" },
+    ]
+
+    files = [
+      { action = "open", default = true, bind = "ctrl y" },
+      { action = "opendir", label = "open dir", bind = "shift ctrl y" },
+      { action = "copypath", label = "copy path", bind = "ctrl shift c" },
+      { action = "copyfile", label = "copy file", bind = "ctrl c" },
+      { action = "localsend", label = "localsend", bind = "ctrl s" },
+      { action = "refresh_index", label = "reload", bind = "ctrl r", after = "AsyncReload" },
+    ]
+
+    todo = [
+      { action = "save", default = true, bind = "ctrl y", after = "AsyncClearReload" },
+      { action = "save_next", label = "save & new", bind = "shift ctrl y", after = "AsyncClearReload" },
+      { action = "delete", bind = "ctrl x", after = "AsyncClearReload" },
+      { action = "active", default = true, bind = "ctrl y", after = "Nothing" },
+      { action = "inactive", default = true, bind = "ctrl y", after = "Nothing" },
+      { action = "done", bind = "ctrl c", after = "Nothing" },
+      { action = "change_category", bind = "ctrl period", label = "change category", after = "Nothing" },
+      { action = "clear", bind = "ctrl x", after = "AsyncClearReload", global = true },
+      { action = "create", bind = "ctrl a", after = "AsyncClearReload" },
+      { action = "search", bind = "ctrl slash", after = "AsyncClearReload" },
+    ]
+
+    runner = [
+      { action = "run", default = true, bind = "ctrl y" },
+      { action = "runterminal", label = "run in terminal", bind = "shift ctrl y" },
+    ]
+
+    symbols = [
+      { action = "run_cmd", label = "select", default = true, bind = "ctrl y" },
+    ]
+
+    unicode = [
+      { action = "run_cmd", label = "select", default = true, bind = "ctrl y" },
+    ]
+
+    clipboard = [
+      { action = "copy", default = true, bind = "ctrl y" },
+      { action = "remove", bind = "ctrl x", after = "AsyncClearReload" },
+      { action = "remove_all", label = "clear", bind = "ctrl shift x", after = "AsyncClearReload" },
+      { action = "show_images_only", label = "only images", bind = "ctrl i", after = "AsyncClearReload" },
+      { action = "show_text_only", label = "only text", bind = "ctrl i", after = "AsyncClearReload" },
+      { action = "show_combined", label = "show all", bind = "ctrl i", after = "AsyncClearReload" },
+      { action = "pause", bind = "ctrl shift p" },
+      { action = "unpause", bind = "ctrl shift p" },
+      { action = "edit", bind = "ctrl e" },
+      { action = "localsend", bind = "ctrl s" },
+    ]
+
+    bookmarks = [
+      { action = "save", bind = "ctrl y", after = "AsyncClearReload" },
+      { action = "open", default = true, bind = "ctrl y" },
+      { action = "delete", bind = "ctrl x", after = "AsyncClearReload" },
+      { action = "change_category", label = "Change category", bind = "ctrl period", after = "Nothing" },
+      { action = "change_browser", label = "Change browser", bind = "ctrl b", after = "Nothing" },
+      { action = "import", label = "Import", bind = "ctrl i", after = "AsyncClearReload" },
+      { action = "create", bind = "ctrl a", after = "AsyncClearReload" },
+      { action = "search", bind = "ctrl slash", after = "AsyncClearReload" },
+    ]

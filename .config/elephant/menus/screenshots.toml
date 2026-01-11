@@ -1,0 +1,58 @@
+name        = "screenshots"
+name_pretty = "Screenshots"
+icon        = "camera-photo"
+description = "View, take, and annotate screenshots and screen recordings."
+keywords    = ["screenshot", "recording"]
+
+[[entries]]
+  text    = "View Screenshots"
+  actions = { "view" = "imv ~/Pictures/Screenshots/" }
+
+[[entries]]
+  text    = "Annotate"
+  actions = { "annotate" = "wl-paste | satty -f -" }
+
+[[entries]]
+  text    = "Toggle Record Region"
+  actions = { "record_region" = "hyprcap --write rec -s region" }
+
+[[entries]]
+  text    = "Toggle Record Window"
+  actions = { "record_window" = "hyprcap --write rec -s window" }
+
+[[entries]]
+  text    = "Toggle Record Monitor"
+  actions = { "record_monitor" = "hyprcap --write rec -s monitor" }
+
+[[entries]]
+  text    = "Stop Ongoing Recording"
+  actions = { "stop_record" = "hyprcap rec-stop" }
+
+[[entries]]
+  text     = "OCR"
+  keywords = ["ocr", "text recognition", "OCR"]
+  actions  = { "ocr" = "hyprcap --raw shot -s region | tesseract stdin stdout -l eng | wl-copy" }
+
+[[entries]]
+  text    = "Screenshot Region (Clipboard)"
+  actions = { "region_clipboard" = "hyprcap --copy shot -s region" }
+
+[[entries]]
+  text    = "Screenshot Region (Save)"
+  actions = { "region_save" = "hyprcap --write shot -s region" }
+
+[[entries]]
+  text    = "Screenshot Window (Clipboard)"
+  actions = { "window_clipboard" = "hyprcap --copy shot -s window" }
+
+[[entries]]
+  text    = "Screenshot Window (Save)"
+  actions = { "window_save" = "hyprcap --write shot -s window" }
+
+[[entries]]
+  text    = "Screenshot Monitor (Clipboard)"
+  actions = { "monitor_clipboard" = "hyprcap --copy shot -s monitor" }
+
+[[entries]]
+  text    = "Screenshot Monitor (Save)"
+  actions = { "monitor_save" = "hyprcap --write shot -s monitor" }
