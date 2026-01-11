@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=KDE Connect Tray Indicator
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=kdeconnect-indicator
+Exec=sh -c 'sleep 10 && kdeconnect-indicator'

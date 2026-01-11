@@ -1,12 +1,12 @@
 [Unit]
-Description=Clipboard history “manager” for wayland
-Documentation=https://github.com/sentriz/cliphist
+Description=System tray UI for Syncthing
+Documentation=https://martchus.github.io/syncthingtray
 After=graphical-session.target
 
 [Service]
 Type=exec
 ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "wlroots:sway:Wayfire:labwc:Hyprland" ""
-ExecStart=wl-paste --type image --watch cliphist store
+ExecStart=/usr/bin/syncthingtray qt-widgets-gui --single-instance --wait
 Restart=on-failure
 Slice=app-graphical.slice
 

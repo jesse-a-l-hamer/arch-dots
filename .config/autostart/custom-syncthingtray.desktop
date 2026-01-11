@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=syncthingtray
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=syncthingtray
+Exec=sh -c 'sleep 10 && syncthingtray qt-widgets-gui --single-instance --wait'

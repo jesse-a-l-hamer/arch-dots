@@ -1,12 +1,11 @@
 [Unit]
-Description=Clipboard history “manager” for wayland
-Documentation=https://github.com/sentriz/cliphist
+Description=System tray indicator for kdeconnect
 After=graphical-session.target
 
 [Service]
 Type=exec
 ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "wlroots:sway:Wayfire:labwc:Hyprland" ""
-ExecStart=wl-paste --type image --watch cliphist store
+ExecStart=/usr/bin/kdeconnect-indicator
 Restart=on-failure
 Slice=app-graphical.slice
 

@@ -1,0 +1,7 @@
+[Unit]
+Description=Sends heads-up notifications every 15 minutes.
+
+[Timer]
+OnActiveSec=1
+OnUnitActiveSec=15min
+AccuracySec=1us

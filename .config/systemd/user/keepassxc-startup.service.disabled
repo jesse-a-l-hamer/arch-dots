@@ -1,12 +1,12 @@
 [Unit]
-Description=Clipboard history “manager” for wayland
-Documentation=https://github.com/sentriz/cliphist
+Description=Autostart KeepassXC with specific vault
+Documentation=man:KEEPASSXC(1)
 After=graphical-session.target
 
 [Service]
 Type=exec
 ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "wlroots:sway:Wayfire:labwc:Hyprland" ""
-ExecStart=wl-paste --type image --watch cliphist store
+ExecStart=%h/.local/bin/launch-keepassxc.sh
 Restart=on-failure
 Slice=app-graphical.slice
 

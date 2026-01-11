@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Start XDG Desktop Portals
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=/home/jalhamer/.local/bin/xdg-desktop-portals-startup
+Exec=/home/jalhamer/.local/bin/xdg-desktop-portals-startup

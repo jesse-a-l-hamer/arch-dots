@@ -1,0 +1,6 @@
+[Unit]
+Description=Sends heads-up notifications every 15 minutes.
+
+[Service]
+Type=oneshot
+ExecStart=python %h/.local/bin/timecheck.py

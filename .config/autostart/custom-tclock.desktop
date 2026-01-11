@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Autostart Terminal
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=xdg-terminal-exec
+Exec=sh -c 'sleep 5 && xdg-terminal-exec --hold -- tclock --color "#F0C6C6"'

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Reconnect Mullvad VPN
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=mullvad
+Exec=sh -c 'sleep 1 && mullvad reconnect'
+

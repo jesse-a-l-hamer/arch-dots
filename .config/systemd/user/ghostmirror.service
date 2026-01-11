@@ -5,8 +5,6 @@ Wants=network-online.target
 
 [Service]
 ExecStart=/usr/bin/ghostmirror -mul %E/ghostmirror/mirrorlist.all %E/ghostmirror/mirrorlist -s light -S state,outofdate,morerecent,estimated,speed
-; Environment="RESTART_COUNT=0"
-; Environment="SERVICE_VERSION=0.18.2"
 Type=oneshot
 Restart=on-failure
 RestartSec=30m

@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Autostart Zen Browser
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=/usr/bin/zen-browser
+Exec=sh -c 'sleep 5 && /usr/bin/zen-browser'

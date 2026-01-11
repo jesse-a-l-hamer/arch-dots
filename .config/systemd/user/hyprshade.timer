@@ -1,8 +1,0 @@
-[Unit]
-Description=Apply screen filter on schedule
-
-[Timer]
-
-
-[Install]
-WantedBy=timers.target

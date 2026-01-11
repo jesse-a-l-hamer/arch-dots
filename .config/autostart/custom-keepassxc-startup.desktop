@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=KeepassXC Startup
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=/home/jalhamer/.local/bin/launch-keepassxc.sh
+Exec=sh -c 'sleep 5 && /home/jalhamer/.local/bin/launch-keepassxc.sh'

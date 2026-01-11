@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=System76 User Daemon
+Comment=Make backlight work on GNOME with NVIDIA 9-Series hardware
+Exec=/usr/lib/system76-driver/system76-user-daemon
+Terminal=false
+Icon=folder
+NoDisplay=true
+StartupNotify=false
+Categories=System;Settings;
+Hidden=true
