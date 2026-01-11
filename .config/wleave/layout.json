@@ -1,18 +1,20 @@
 {
   "css": "/home/jalhamer/.config/wleave/style.css",
-  "buttons-per-row": "1/2",
-  "column-spacing": 8,
+  "buttons-per-row": "5",
+  "column-spacing": 50,
   "row-spacing": 8,
-  "marginn": 200,
+  "margin": 700,
+  "margin-top": 850,
+  "margin-bottom": 850,
   "show-keybinds": true,
   "protocol": "layer-shell",
   "buttons": [
     {
-      "label": "lock",
-      "action": "app2unit -- hyprlock --grace 60",
-      "text": "Lock",
-      "keybind": "l",
-      "icon": "/home/jalhamer/.config/wleave/icons/lock.svg"
+      "label": "suspend",
+      "action": "systemctl suspend",
+      "text": "Suspend",
+      "keybind": "u",
+      "icon": "/home/jalhamer/.config/wleave/icons/suspend.svg"
     },
     {
       "label": "hibernate",
@@ -22,11 +24,11 @@
       "icon": "/home/jalhamer/.config/wleave/icons/hibernate.svg"
     },
     {
-      "label": "logout",
-      "action": "loginctl terminate-user \"\"",
-      "text": "Logout",
-      "keybind": "e",
-      "icon": "/home/jalhamer/.config/wleave/icons/logout.svg"
+      "label": "reboot",
+      "action": "systemctl reboot",
+      "text": "Reboot",
+      "keybind": "r",
+      "icon": "/home/jalhamer/.config/wleave/icons/reboot.svg"
     },
     {
       "label": "shutdown",
@@ -36,18 +38,11 @@
       "icon": "/home/jalhamer/.config/wleave/icons/shutdown.svg"
     },
     {
-      "label": "suspend",
-      "action": "systemctl suspend",
-      "text": "Suspend",
-      "keybind": "u",
-      "icon": "/home/jalhamer/.config/wleave/icons/suspend.svg"
-    },
-    {
-      "label": "reboot",
-      "action": "systemctl reboot",
-      "text": "Reboot",
-      "keybind": "r",
-      "icon": "/home/jalhamer/.config/wleave/icons/reboot.svg"
+      "label": "logout",
+      "action": "uwsm stop",
+      "text": "Logout",
+      "keybind": "e",
+      "icon": "/home/jalhamer/.config/wleave/icons/logout.svg"
     }
   ]
 }
