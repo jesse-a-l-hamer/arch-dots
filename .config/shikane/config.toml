@@ -1,6 +1,6 @@
 [[profile]]
   name = "docked-office-single_monitor"
-  exec = ["notify-send shikane \"Profile $SHIKANE_PROFILE_NAME applied.\""]
+  exec = ["notify-send -a shikane -i display -t 5000 \"profile applied\" \"$SHIKANE_PROFILE_NAME\""]
   [[profile.output]]
     enable = false
     search = ["d%BOE 0x0BB7", "n/eDP-[1-9]", "m=0x0BB7", "s=", "v=BOE"]
@@ -17,7 +17,7 @@
 
 [[profile]]
   name = "docked-office-multi_monitor"
-  exec = ["notify-send shikane \"Profile $SHIKANE_PROFILE_NAME applied.\""]
+  exec = ["notify-send -a shikane -i display -t 5000 \"profile applied\" \"$SHIKANE_PROFILE_NAME\""]
   [[profile.output]]
     enable        = true
     search        = ["d%BOE 0x0BB7", "n/eDP-[1-9]", "m=0x0BB7", "s=", "v=BOE"]
@@ -39,7 +39,7 @@
 
 [[profile]]
   name = "undocked"
-  exec = ["notify-send shikane \"Profile $SHIKANE_PROFILE_NAME applied.\""]
+  exec = ["notify-send -a shikane -i display -t 5000 \"profile applied\" \"$SHIKANE_PROFILE_NAME\""]
   [[profile.output]]
     enable        = true
     search        = ["d%BOE 0x0BB7", "n/eDP-[1-9]", "m=0x0BB7", "s=", "v=BOE"]
