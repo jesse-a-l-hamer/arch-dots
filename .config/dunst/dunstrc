@@ -28,17 +28,17 @@
     progress_bar_corner_radius = 0
     progress_bar_corners = all
 
-    icon_corner_radius = 0
+    icon_corner_radius = 10
     icon_corners = all
 
-    indicate_hidden = yes
+    indicate_hidden = true
 
     transparency = 0
 
     separator_height = 2
     padding = 8
     horizontal_padding = 8
-    text_icon_padding = 0
+    text_icon_padding = 2
     frame_width = 3
     frame_color = "#f0c6c6"
     gap_size = 0
@@ -116,7 +116,7 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#6e738dee"
+    background = "#363a4f"
     foreground = "#cad3f5"
     frame_color = "#7dc4e4"
     timeout = 10
@@ -124,7 +124,7 @@
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#6e738dee"
+    background = "#363a4f"
     foreground = "#cad3f5"
     timeout = 10
     override_pause_level = 30
@@ -132,7 +132,7 @@
     default_icon = dialog-information
 
 [urgency_critical]
-    background = "#6e738dee"
+    background = "#363a4f"
     foreground = "#cad3f5"
     frame_color = "#f5a97f"
     timeout = 0
