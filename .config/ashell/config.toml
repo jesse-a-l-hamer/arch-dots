@@ -1,151 +1,142 @@
-log_level = "warn,ashell::services::tray=debug"
-outputs = "All"
-position = "Top"
-enable_esc_key = true
+log_level        = "warn,ashell::services::tray=debug"
+outputs          = "All"
+position         = "Top"
+enable_esc_key   = true
 app_launcher_cmd = "nc -U /run/user/1000/walker/walker.sock"
-clipboard_cmd = "walker -m clipboard"
+clipboard_cmd    = "walker -m clipboard"
 
 [modules]
-left = [
-  ["AppLauncher", "Clipboard", "Updates", "Workspaces"],
-  # [
-  #   "WindowTitle",
-  # ],
-  # [
-  #   "MediaPlayer",
-  # ],
-  ["Tray"],
-]
-center = [["WindowTitle"], ["Clock"], ["MediaPlayer"]]
-right = [
-  [
-    "KeyboardSubmap",
-    "Privacy",
-    "SystemInfo",
-  ],
-  [
-    "ToggleNotifications",
-    "PopNotification",
-    "RemoveNotification",
-    "ClearNotificationHistory",
-  ],
-  [
-    "Settings",
-  ],
-]
+  left = [["AppLauncher", "Clipboard", "Updates", "Workspaces"], ["Tray"]]
+  center = [["WindowTitle"], ["Clock"], ["MediaPlayer"]]
+  right = [
+    [
+      "KeyboardSubmap",
+      "Privacy",
+      "SystemInfo",
+    ],
+    [
+      "ToggleNotifications",
+      "PopNotification",
+      "RemoveNotification",
+      "ClearNotificationHistory",
+    ],
+    [
+      "Settings",
+    ],
+  ]
 
 [updates]
-check_cmd = "checkupdates; paru -Qua"
-update_cmd = "kitty -- zsh -c 'paru; echo Done - Press enter to exit; read' &"
+  check_cmd  = "checkupdates; paru -Qua"
+  update_cmd = "kitty -- zsh -c 'paru; echo Done - Press enter to exit; read' &"
 
 [workspaces]
-workspace_names = ["", "󰲣", "󰲥", "󰲧", "󰲩", "󰲫", "󰲭", "󰲯", "󰲱"]
+  workspace_names = ["", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"]
 
 [window_title]
-mode = "Title"                    # or "Class"
-truncate_title_after_length = 100
+  mode                        = "Title" # or "Class"
+  truncate_title_after_length = 100
 
 [media_player]
-max_title_length = 100
+  max_title_length = 100
 
 [system_info]
-indicators = [
-  "Temperature",
-  "Cpu",
-  "Memory",
-  "IpAddress",
-  "DownloadSpeed",
-  "UploadSpeed",
-]
+  indicators = [
+    "Temperature",
+    "Cpu",
+    "Memory",
+    "IpAddress",
+    "DownloadSpeed",
+    "UploadSpeed",
+  ]
 
-[system_info.temperature]
-sensor = "system76_acpi CPU temp"
+  [system_info.temperature]
+    sensor = "system76_acpi CPU temp"
 
 [clock]
-format = " %Y-%m-%d  %H:%M:%S:%z"
+  format = " %Y-%m-%d  %H:%M:%S:%z"
 
 [settings]
-# lock_cmd      = "sh -c '(sleep 0.5s; app2unit -- hyprlock --grace 60)' & disown"
-shutdown_cmd = "systemctl poweroff"
-suspend_cmd = "systemctl suspend"
-hibernate_cmd = "systemctl hibernate"
-reboot_cmd = "systemctl reboot"
-logout_cmd = "uwsm stop"
+  # lock_cmd      = "sh -c '(sleep 0.5s; app2unit -- hyprlock --grace 60)' & disown"
+  shutdown_cmd  = "systemctl poweroff"
+  suspend_cmd   = "systemctl suspend"
+  hibernate_cmd = "systemctl hibernate"
+  reboot_cmd    = "systemctl reboot"
+  logout_cmd    = "uwsm stop"
 
-audio_sinks_more_cmd = "app2unit -- pavucontrol -t 3"
-audio_sources_more_cmd = "app2unit -- pavucontrol -t 4"
-wifi_more_cmd = "app2unit-term -- impala"
-bluetooth_more_cmd = "app2unit-term -- bluetui"
-vpn_more_cmd = "app2unit -- mullvad-vpn"
+  audio_sinks_more_cmd   = "app2unit -- pavucontrol -t 3"
+  audio_sources_more_cmd = "app2unit -- pavucontrol -t 4"
+  wifi_more_cmd          = "app2unit-term -- impala"
+  bluetooth_more_cmd     = "app2unit-term -- bluetui"
+  vpn_more_cmd           = "app2unit -- mullvad-vpn"
 
-battery_format = "Icon"
-peripheral_battery_format = "IconAndPercentage"
-
-[[CustomModule]]
-name = "ToggleNotifications"
-icon = ""
-command = "sleep 0.1 && dunstctl set-paused toggle"
-listen_cmd = "python ~/.config/ashell/scripts/ToggleNotifications/listen_cmd.py"
-icons.'dnd.*' = ""
-icons.'email.*' = ""
-icons.'chat.*' = "󱋊"
-icons.'system.*' = "󱨪"
-icons.'network.*' = "󱂇"
-icons.'battery.*' = "󰁺"
-icons.'update.*' = "󰚰"
-icons.'music.*' = "󰝚"
-icons.'volume.*' = "󰕿"
-icons.'hypr.*' = ""
-icons.'mpv.*' = ""
-icons.'display.*' = "󰍹"
-icons.'security.*' = "󰒃"
-icons.'timecheck.*' = "󰾨"
-alert = ".*notification"
+  battery_format            = "Icon"
+  peripheral_battery_format = "IconAndPercentage"
 
 [[CustomModule]]
-name = "PopNotification"
-icon = "󰪒"
-command = "sleep 0.1 && dunstctl history-pop"
+  name                = "ToggleNotifications"
+  icon                = ""
+  command             = "sleep 0.1 && dunstctl set-paused toggle"
+  listen_cmd          = "python ~/.config/ashell/scripts/ToggleNotifications/listen_cmd.py"
+  icons.'dnd.*'       = ""
+  icons.'email.*'     = ""
+  icons.'chat.*'      = "󱋊"
+  icons.'system.*'    = "󱨪"
+  icons.'network.*'   = "󱂇"
+  icons.'battery.*'   = "󰁺"
+  icons.'update.*'    = "󰚰"
+  icons.'music.*'     = "󰝚"
+  icons.'volume.*'    = "󰕿"
+  icons.'hypr.*'      = ""
+  icons.'mpv.*'       = ""
+  icons.'display.*'   = "󰍹"
+  icons.'security.*'  = "󰒃"
+  icons.'timecheck.*' = "󰾨"
+  alert               = ".*notification"
 
 [[CustomModule]]
-name = "RemoveNotification"
-icon = "󱏪"
-command = "python ~/.config/ashell/scripts/RemoveNotification/command.py"
+  name    = "PopNotification"
+  icon    = "󰪒"
+  command = "sleep 0.1 && dunstctl history-pop"
 
 [[CustomModule]]
-name = "ClearNotificationHistory"
-icon = "󱏬"
-command = "dunstctl history-clear"
+  name    = "RemoveNotification"
+  icon    = "󱏪"
+  command = "python ~/.config/ashell/scripts/RemoveNotification/command.py"
+
+[[CustomModule]]
+  name    = "ClearNotificationHistory"
+  icon    = "󱏬"
+  command = "dunstctl history-clear"
 
 [appearance]
-font_name = "VictorMono Nerd Font"
-style = "Islands"
-scale_factor = 1.25
-opacity = 0.9
+  font_name    = "VictorMono Nerd Font"
+  style        = "Islands"
+  scale_factor = 1.25
+  opacity      = 0.9
 
-success_color = "#a6da95"
-text_color = "#cad3f5"
+  success_color = "#a6da95"
+  text_color    = "#cad3f5"
 
-workspace_colors = ["#f0c6c6", "#f5bde6"]
-special_workspace_colors = ["#c6a0f6", "#7dc4e4"]
+  workspace_colors         = ["#f0c6c6", "#f5bde6"]
+  special_workspace_colors = ["#c6a0f6", "#7dc4e4"]
 
-[appearance.primary_color]
-base = "#f0c6c6"
-text = "#24273a"
+  [appearance.primary_color]
+    base = "#f0c6c6"
+    text = "#24273a"
 
-[appearance.danger_color]
-base = "#ed8796"
-weak = "#eed49f"
+  [appearance.danger_color]
+    base = "#ed8796"
+    weak = "#eed49f"
 
-[appearance.background_color]
-base = "#24273a"
-weak = "#363a4f"
-strong = "#494d64"
+  [appearance.background_color]
+    base   = "#24273a"
+    weak   = "#363a4f"
+    strong = "#494d64"
 
-[appearance.secondary_color]
-base = "#181926"
-strong = "#1e2030"
+  [appearance.secondary_color]
+    base   = "#181926"
+    strong = "#1e2030"
 
-[appearance.menu]
-opacity = 0.9
-backdrop = 0.2
+  [appearance.menu]
+    opacity  = 0.9
+    backdrop = 0.2
