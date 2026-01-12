@@ -1,0 +1,7 @@
+[Unit]
+Description=Empty trash
+Documentation=https://github.com/andreafrancia/trash-cli
+
+[Service]
+Type=oneshot
+ExecStart=trash-empty -f 30
