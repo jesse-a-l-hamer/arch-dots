@@ -11,7 +11,7 @@ debug                     = false     # enables debug printing for some stuff, f
 page_jump_items           = 10        # number of items to skip with Page Up/Down
 hide_quick_activation     = false     # globally hide the quick activation buttons
 hide_action_hints         = false     # globally hide the action hints
-hide_action_hints_dmenu   = true      # hide the actions hints for dmenu
+hide_action_hints_dmenu   = false     # hide the actions hints for dmenu
 hide_return_action        = false     # hide actions that are bound to Return
 resume_last_query         = false     # open walker with the last query in place
 actions_as_menu           = true      # display all possible actions in a submenu
@@ -164,25 +164,25 @@ actions_as_menu           = true      # display all possible actions in a submen
       { action = "monitor_save", label = "screenshot", bind = "ctrl y", after = "Close" },
     ]
 
-    dmenu = [{ action = "select", default = true, bind = "ctrl y" }]
+    dmenu = [{ action = "select", label = "select", bind = "ctrl y" }]
 
     providerlist = [
-      { action = "activate", default = true, bind = "ctrl y", after = "ClearReload" },
+      { action = "activate", label = "activate", bind = "ctrl y", after = "ClearReload" },
     ]
 
     bluetooth = [
-      { action = "find", bind = "ctrl f", after = "AsyncClearReload" },
-      { action = "remove", bind = "ctrl x", after = "AsyncReload" },
-      { action = "trust", bind = "ctrl t", after = "AsyncReload" },
-      { action = "untrust", bind = "ctrl t", after = "AsyncReload" },
-      { action = "pair", bind = "ctrl y", after = "AsyncReload" },
-      { action = "connect", default = true, bind = "ctrl y", after = "AsyncReload" },
-      { action = "disconnect", default = true, bind = "ctrl y", after = "AsyncReload" },
+      { action = "find", label = "find", bind = "ctrl f", after = "AsyncClearReload" },
+      { action = "remove", label = "remove", bind = "ctrl x", after = "AsyncReload" },
+      { action = "trust", label = "trust", bind = "ctrl t", after = "AsyncReload" },
+      { action = "untrust", label = "untrust", bind = "ctrl t", after = "AsyncReload" },
+      { action = "pair", label = "pair", bind = "ctrl y", after = "AsyncReload" },
+      { action = "connect", label = "connect", bind = "ctrl y", after = "AsyncReload" },
+      { action = "disconnect", label = "disconnect", bind = "ctrl y", after = "AsyncReload" },
     ]
 
     archlinuxpkgs = [
-      { action = "install", bind = "ctrl y", default = true },
-      { action = "remove", bind = "ctrl y" },
+      { action = "install", label = "install", bind = "ctrl y" },
+      { action = "remove", label = "remove", bind = "ctrl y" },
       { action = "show_all", label = "show all", bind = "ctrl s", after = "AsyncClearReload" },
       { action = "refresh", label = "refresh", bind = "ctrl shift r", after = "AsyncReload" },
       { action = "visit_url", label = "open URL", bind = "ctrl o" },
@@ -190,29 +190,29 @@ actions_as_menu           = true      # display all possible actions in a submen
     ]
 
     calc = [
-      { action = "copy", default = true, bind = "ctrl y" },
-      { action = "delete", bind = "ctrl x", after = "AsyncReload" },
-      { action = "save", bind = "ctrl s", after = "AsyncClearReload" },
+      { action = "copy", label = "copy", bind = "ctrl y" },
+      { action = "delete", label = "delete", bind = "ctrl x", after = "AsyncReload" },
+      { action = "save", label = "save", bind = "ctrl s", after = "AsyncClearReload" },
     ]
 
     websearch = [
-      { action = "search", default = true, bind = "ctrl y" },
-      { action = "open_url", label = "open url", default = true, bind = "ctrl y" },
+      { action = "search", label = "search", bind = "ctrl y" },
+      { action = "open_url", label = "open url", bind = "ctrl y" },
     ]
 
     desktopapplications = [
-      { action = "start", default = true, bind = "ctrl y" },
+      { action = "start", label = "start", bind = "ctrl y" },
       { action = "start:keep", label = "open+next", bind = "shift ctrl y", after = "KeepOpen" },
       { action = "new_instance", label = "new instance", bind = "alt ctrl y" },
       { action = "new_instance:keep", label = "new+next", bind = "shift alt ctrl y", after = "KeepOpen" },
-      { action = "pin", bind = "ctrl shift p", after = "AsyncReload" },
-      { action = "unpin", bind = "ctrl shift p", after = "AsyncReload" },
-      { action = "pinup", bind = "ctrl shift k", after = "AsyncReload" },
-      { action = "pindown", bind = "ctrl shift j", after = "AsyncReload" },
+      { action = "pin", label = "pin", bind = "ctrl shift p", after = "AsyncReload" },
+      { action = "unpin", label = "unpin", bind = "ctrl shift p", after = "AsyncReload" },
+      { action = "pinup", label = "pinup", bind = "ctrl shift k", after = "AsyncReload" },
+      { action = "pindown", label = "pindown", bind = "ctrl shift j", after = "AsyncReload" },
     ]
 
     files = [
-      { action = "open", default = true, bind = "ctrl y" },
+      { action = "open", label = "open", bind = "ctrl y" },
       { action = "opendir", label = "open dir", bind = "shift ctrl y" },
       { action = "copypath", label = "copy path", bind = "ctrl shift c" },
       { action = "copyfile", label = "copy file", bind = "ctrl c" },
@@ -221,51 +221,47 @@ actions_as_menu           = true      # display all possible actions in a submen
     ]
 
     todo = [
-      { action = "save", default = true, bind = "ctrl y", after = "AsyncClearReload" },
+      { action = "save", label = "save", bind = "ctrl y", after = "AsyncClearReload" },
       { action = "save_next", label = "save & new", bind = "shift ctrl y", after = "AsyncClearReload" },
-      { action = "delete", bind = "ctrl x", after = "AsyncClearReload" },
-      { action = "active", default = true, bind = "ctrl y", after = "Nothing" },
-      { action = "inactive", default = true, bind = "ctrl y", after = "Nothing" },
-      { action = "done", bind = "ctrl c", after = "Nothing" },
-      { action = "change_category", bind = "ctrl period", label = "change category", after = "Nothing" },
-      { action = "clear", bind = "ctrl x", after = "AsyncClearReload", global = true },
-      { action = "create", bind = "ctrl a", after = "AsyncClearReload" },
-      { action = "search", bind = "ctrl slash", after = "AsyncClearReload" },
+      { action = "delete", label = "delete", bind = "ctrl x", after = "AsyncClearReload" },
+      { action = "active", label = "active", bind = "ctrl y", after = "Nothing" },
+      { action = "inactive", label = "inactive", bind = "ctrl y", after = "Nothing" },
+      { action = "done", label = "done", bind = "ctrl c", after = "Nothing" },
+      { action = "change_category", label = "change category", bind = "ctrl period", after = "Nothing" },
+      { action = "clear", label = "clear", bind = "ctrl x", after = "AsyncClearReload", global = true },
+      { action = "create", label = "create", bind = "ctrl a", after = "AsyncClearReload" },
+      { action = "search", label = "search", bind = "ctrl slash", after = "AsyncClearReload" },
     ]
 
     runner = [
-      { action = "run", default = true, bind = "ctrl y" },
+      { action = "run", label = "run", bind = "ctrl y" },
       { action = "runterminal", label = "run in terminal", bind = "shift ctrl y" },
     ]
 
-    symbols = [
-      { action = "run_cmd", label = "select", default = true, bind = "ctrl y" },
-    ]
+    symbols = [{ action = "run_cmd", label = "copy/insert", bind = "ctrl y" }]
 
-    unicode = [
-      { action = "run_cmd", label = "select", default = true, bind = "ctrl y" },
-    ]
+    unicode = [{ action = "run_cmd", label = "copy/insert", bind = "ctrl y" }]
 
     clipboard = [
-      { action = "copy", default = true, bind = "ctrl y" },
-      { action = "remove", bind = "ctrl x", after = "AsyncClearReload" },
+      { action = "copy", label = "copy", bind = "ctrl y" },
+      { action = "remove", label = "remove", bind = "ctrl x", after = "AsyncClearReload" },
       { action = "remove_all", label = "clear", bind = "ctrl shift x", after = "AsyncClearReload" },
       { action = "show_images_only", label = "only images", bind = "ctrl i", after = "AsyncClearReload" },
       { action = "show_text_only", label = "only text", bind = "ctrl i", after = "AsyncClearReload" },
       { action = "show_combined", label = "show all", bind = "ctrl i", after = "AsyncClearReload" },
-      { action = "pause", bind = "ctrl shift p" },
-      { action = "unpause", bind = "ctrl shift p" },
-      { action = "edit", bind = "ctrl e" },
-      { action = "localsend", bind = "ctrl s" },
+      { action = "pause", label = "pause", bind = "ctrl shift p" },
+      { action = "unpause", label = "unpause", bind = "ctrl shift p" },
+      { action = "edit", label = "edit", bind = "ctrl e" },
+      { action = "localsend", label = "localsend", bind = "ctrl s" },
     ]
 
     bookmarks = [
-      { action = "save", bind = "ctrl y", after = "AsyncClearReload" },
-      { action = "open", default = true, bind = "ctrl y" },
-      { action = "delete", bind = "ctrl x", after = "AsyncClearReload" },
+      { action = "save", label = "save", bind = "ctrl y", after = "AsyncClearReload" },
+      { action = "open", label = "open", bind = "ctrl y" },
+      { action = "delete", label = "delete", bind = "ctrl x", after = "AsyncClearReload" },
       { action = "change_category", label = "Change category", bind = "ctrl period", after = "Nothing" },
       { action = "change_browser", label = "Change browser", bind = "ctrl b", after = "Nothing" },
       { action = "import", label = "Import", bind = "ctrl i", after = "AsyncClearReload" },
-      { action = "create", bind = "ctrl a", after = "AsyncClearReload" },
-      { action = "search", bind = "ctrl slash", after = "AsyncClearReload" },
+      { action = "create", label = "create", bind = "ctrl a", after = "AsyncClearReload" },
+      { action = "search", label = "search", bind = "ctrl slash", after = "AsyncClearReload" },
     ]
