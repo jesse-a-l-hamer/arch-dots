@@ -23,8 +23,8 @@ actions_as_menu           = true      # display all possible actions in a submen
   anchor_right  = true
 
 [columns]
-  "symbols" = 3
-  "unicode" = 3
+  # "symbols" = 3
+  # "unicode" = 3
 
 [keybinds]
   close             = ["Escape", "ctrl q"]
