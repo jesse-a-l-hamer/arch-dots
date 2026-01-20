@@ -1,24 +1,16 @@
-# See dunst(5) for all configuration options
-
 [global]
 
     enable_posix_regex = true
 
-    ### Display ###
-
     monitor = 0
     follow = keyboard
 
-    ### Geometry ###
-
-    width = 300
+    width = (300, 500)
     height = (0, 300)
-    origin = top-right
-    offset = (10, 50)
+    origin = top-center
+    offset = (0, 15)
     scale = 0
     notification_limit = 20
-
-    ### Progress bar ###
 
     progress_bar = true
     progress_bar_height = 10
@@ -38,18 +30,16 @@
     separator_height = 2
     padding = 8
     horizontal_padding = 8
-    text_icon_padding = 2
+    text_icon_padding = 10
     frame_width = 3
-    frame_color = "#f0c6c6"
+    frame_color = "#f0c6c6cc"
     gap_size = 0
-    separator_color= frame
-    highlight = "#f0c6c6"
+    separator_color = frame
+    highlight = "#f0c6c6cc"
 
     sort = yes
 
     idle_threshold = 120
-
-    ### Text ###
 
     font = "VictorMono Nerd Font Propo 11"
     line_height = 0
@@ -64,8 +54,7 @@
     hide_duplicate_count = false
     show_indicators = yes
 
-    ### Icons ###
-
+    icon_path = "/usr/share/icons/Papirus-Dark/16x16/status/:/usr/share/icons/Papirus-Dark/16x16/devices/:/usr/share/icons/Papirus/16x16/status/:/usr/share/icons/Papirus/16x16/devices/"
     enable_recursive_icon_lookup = true
     icon_theme = "Papirus-Dark"
 
@@ -73,17 +62,12 @@
     min_icon_size = 32
     max_icon_size = 128
 
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
-
-    ### History ###
 
     sticky_history = yes
     history_length = 20
 
-    ### Misc/Advanced ###
-
-    dmenu = /usr/bin/rofi -dmenu -p dunst:
-    browser = /usr/bin/xdg-open
+    dmenu = /usr/bin/walker --dmenu -p dunst
+    browser = /usr/bin/app2unit-open
     always_run_script = true
     title = Dunst
     class = Dunst
@@ -93,16 +77,10 @@
 
     ignore_dbusclose = false
 
-    ### Wayland ###
-
     layer = overlay
     force_xwayland = false
 
-    ### Legacy
-
     force_xinerama = false
-
-    ### mouse
 
     mouse_left_click = do_action
     mouse_middle_click = do_action, close_current
@@ -111,21 +89,19 @@
 [experimental]
     per_monitor_dpi = false
 
-[global]
-
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#363a4f"
-    foreground = "#cad3f5"
-    frame_color = "#7dc4e4"
+    background = "#363a4fcc"
+    foreground = "#cad3f5cc"
+    frame_color = "#7dc4e4cc"
     timeout = 10
     # Icon for notifications with low urgency
     default_icon = dialog-information
 
 [urgency_normal]
-    background = "#363a4f"
-    foreground = "#cad3f5"
+    background = "#363a4fcc"
+    foreground = "#cad3f5cc"
     timeout = 10
     override_pause_level = 30
     # Icon for notifications with normal urgency
@@ -135,6 +111,7 @@
     background = "#363a4f"
     foreground = "#cad3f5"
     frame_color = "#f5a97f"
+    separator_color = "#f5a97f"
     timeout = 0
     override_pause_level = 60
     # Icon for notifications with critical urgency
