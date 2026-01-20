@@ -11,10 +11,10 @@ clipboard_cmd    = "walker -m clipboard"
       "AppLauncher",
       "Clipboard",
       "Updates",
-      "Tray",
-      "MediaPlayer",
       "Workspaces",
       "WindowTitle",
+      "Tray",
+      "MediaPlayer",
     ],
   ]
   center = [
