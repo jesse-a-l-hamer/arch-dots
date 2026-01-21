@@ -37,3 +37,6 @@
 [submodule ".config/yazi"]
 	path = .config/yazi
 	url = https://github.com/jesse-a-l-hamer/yazi-dots
+[submodule ".config/catppuccin-themes/neomutt"]
+	path = .config/catppuccin-themes/neomutt
+	url = https://github.com/catppuccin/neomutt
