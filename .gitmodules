@@ -40,3 +40,6 @@
 [submodule ".config/catppuccin-themes/neomutt"]
 	path = .config/catppuccin-themes/neomutt
 	url = https://github.com/catppuccin/neomutt
+[submodule ".config/neomutt"]
+	path = .config/neomutt
+	url = https://github.com/jesse-a-l-hamer/neomutt-dots
