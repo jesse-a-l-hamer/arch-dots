@@ -1,0 +1,90 @@
+#!/usr/bin/env bash
+
+has_cmd() {
+	for opt in "$@"; do
+		if command -v "$opt" >/dev/null; then
+			continue
+		else
+			return $?
+		fi
+	done
+}
+
+parse_input_path() {
+	input_file="$1"
+	mime=$(file -Lbs --mime-type "$1")
+	ext=${1##*.}
+}
+
+check_input_file() {
+	case "$input_file" in
+	*/) handle_dir ;;
+	*) return ;;
+	esac
+	exit 0
+}
+
+check_ext() {
+	case "$ext" in
+	ipynb) handle_jupyter ;;
+	*) return ;;
+	esac
+	exit 0
+}
+
+check_mime() {
+	case "$mime" in
+	*/vnd.sqlite3) handle_sqlite ;;
+	image/*) handle_image ;;
+	*) return ;;
+	esac
+	exit 0
+}
+
+#####################
+### CASE HANDLERS ###
+#####################
+
+handle_dir() {
+	if has_cmd eza && [[ -n $EXT_DEFAULT_OPTS ]]; then
+		eval "eza$EXT_DEFAULT_OPTS -laT $input_file"
+	else
+		exit 1
+	fi
+}
+
+handle_jupyter() {
+	if ! has_cmd bat; then exit 1; fi
+	if has_cmd euporie; then
+		euporie --syntax-theme="catppuccin-macchiato" --graphics="kitty" --page preview "$input_file" | bat
+	elif has_cmd jupyter; then
+		jupyter nbconvert --to python --stdout "$input_file" | bat --color=always -p -l python
+	else
+		exit 1
+	fi
+}
+
+handle_sqlite() {
+	if has_cmd yes sqlite3 bat; then
+		yes .q | sqlite3 "$input_file" | bat --color=always -p -l sql
+	else
+		exit 1
+	fi
+}
+
+handle_image() {
+	if has_cmd exiftool; then
+		exiftool "$input_file" | bat --color=always -p -l yaml
+	else
+		exit 1
+	fi
+}
+#####################
+### MAIN FUNCTION ###
+#####################
+
+parse_input_path "$1"
+check_input_file
+check_ext
+check_mime
+exit 1
