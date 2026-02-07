@@ -1,14 +1,21 @@
 {
   "css": "/home/jalhamer/.config/wleave/style.css",
-  "buttons-per-row": "5",
+  "buttons-per-row": "3",
   "column-spacing": 50,
   "row-spacing": 8,
   "margin": 700,
-  "margin-top": 850,
-  "margin-bottom": 850,
+  "margin-top": 500,
+  "margin-bottom": 500,
   "show-keybinds": true,
   "protocol": "layer-shell",
   "buttons": [
+    {
+      "label": "lock",
+      "action": "loginctl lock-session",
+      "text": "Lock",
+      "keybind": "l",
+      "icon": "/home/jalhamer/.config/wleave/icons/lock.svg"
+    },
     {
       "label": "suspend",
       "action": "systemctl suspend",
