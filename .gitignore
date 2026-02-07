@@ -1,0 +1,14 @@
+/.config/ghostmirror/ghostmirror.log
+/.config/ghostmirror/mirrorlist
+/.config/pnpm/rc
+/.config/systemd/user/default.target.wants
+/.config/systemd/user/timers.target.wants
+/.config/yt-x/recent.json
+/.config/yt-x/subscriptions.json
+/.config/zoom.conf
+/.config/zoomus.conf
+/.ipython/profile_default/db
+/.ipython/profile_default/startup
+/.ipython/profile_default/history.sqlite
+/.jupyter/migrated
+/.local/bin/uu2gslice.sh
