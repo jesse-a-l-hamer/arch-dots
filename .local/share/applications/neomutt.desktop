@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Neomutt
+Type=Application
+Comment=Terminal email client
+Terminal=true
+Icon=/usr/share/neomutt/logo/neomutt.svg
+Exec=neomutt %u
+Categories=Email;
+MimeType=message/rfc822;x-scheme-handler/mailto;
+Actions=ComposeMessage;
+Keywords=Email;E-mail;
+
+[Desktop Action ComposeMessage]
+Name=Compose a new email
+Exec=neomutt -e "push <mail>%u"
