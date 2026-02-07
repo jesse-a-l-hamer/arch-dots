@@ -1,0 +1,17 @@
+application/pdf;     zathura %s
+
+audio/*;             mpv %s
+
+image/*;             imv %s
+
+text/html;           zen-browser %s
+text/*;              nvim %s
+
+video/*;             mpv %s
+
+application/*;       less %s;                          copiousoutput
+audio/*;             less %s;                          copiousoutput
+image/*;             less %s;                          copiousoutput
+text/calendar;       ~/.local/bin/vcalendar-filter;    copiousoutput
+text/*;              less %s;                          copiousoutput
+video/*;             less %s;                          copiousoutput
