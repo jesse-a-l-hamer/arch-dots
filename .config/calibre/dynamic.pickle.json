@@ -1,0 +1,37 @@
+{
+  "add books dialog dir": "/home/jalhamer/Downloads",
+  "add books dialog dir-last-used-filter-spec-all-files": false,
+  "add formats dialog dir": "/home/jalhamer/repositories/computer-networks-systems-approach-book/_build",
+  "add formats dialog dir-last-used-filter-spec-all-files": false,
+  "change cover dialog": "/home/jalhamer/repositories/computer-networks-systems-approach-book",
+  "database location dialog": "/home/jalhamer/Documents/calibre",
+  "import-calibre-palette": "/home/jalhamer/themes/catppuccin/calibre",
+  "notified-version-updates": {
+    "__class__": "set",
+    "__value__": [
+      "8.8"
+    ]
+  },
+  "recursive book import root dir dialog": "/home/jalhamer/Downloads",
+  "save to disk dialog": "/home/jalhamer",
+  "sort_history": [
+    [
+      "tags",
+      false
+    ],
+    [
+      "tags",
+      true
+    ],
+    [
+      "timestamp",
+      false
+    ],
+    [
+      "timestamp",
+      false
+    ]
+  ],
+  "welcome_wizard_device": "default",
+  "welcome_wizard_was_run": true
+}

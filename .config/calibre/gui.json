@@ -1,0 +1,806 @@
+{
+  "basic_metadata_widget_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAADAAABEAAAAZMAAAEKAf////8BAAAAAQA="
+  },
+  "book_info_dialog_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABXgAAAV4B/////wEAAAABAA=="
+  },
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  },
+  "choose_icon_theme_initial_tab": 0,
+  "choose_icon_theme_sort_by": 2,
+  "color_palette": "dark",
+  "cover_grid_background": {
+    "dark": [
+      45,
+      45,
+      45
+    ],
+    "dark_texture": null,
+    "light": [
+      80,
+      80,
+      80
+    ],
+    "light_texture": null,
+    "migrated": true
+  },
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
+  "dark_palette_name": "__current__",
+  "dark_palettes": {
+    "__current__": {
+      "AlternateBase": "#24273a",
+      "Base": "#1e2030",
+      "BrightText": "#cad3f5",
+      "BrightText-disabled": "#cad3f5",
+      "Button": "#24273a",
+      "ButtonText": "#cad3f5",
+      "ButtonText-disabled": "#5b6078",
+      "Highlight": "#f0c6c6",
+      "HighlightedText": "#24273a",
+      "HighlightedText-disabled": "#1e2030",
+      "Link": "#f4dbd6",
+      "LinkVisited": "#8aadf4",
+      "PlaceholderText": "#cad3f5",
+      "PlaceholderText-disabled": "#cad3f5",
+      "Text": "#cad3f5",
+      "Text-disabled": "#5b6078",
+      "ToolTipBase": "#181926",
+      "ToolTipText": "#cad3f5",
+      "ToolTipText-disabled": "#cad3f5",
+      "Window": "#181926",
+      "WindowText": "#cad3f5",
+      "WindowText-disabled": "#5b6078"
+    }
+  },
+  "geometry-of-Plugin Updater plugin:plugin updater dialog": {
+    "frame_geometry": {
+      "height": 1449,
+      "width": 2293,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1449,
+      "width": 2293,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1449,
+      "width": 2293,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAACPQAAAWoAAAAAAAAAAAAAAj0AAAFqAAAAAACAAAADwAAAAAAAAAAAAAACPQAAAWo"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-book_info_dialog_geometry": {
+    "frame_geometry": {
+      "height": 1888,
+      "width": 1584,
+      "x": 422,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1888,
+      "width": 1584,
+      "x": 422,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 2060,
+      "width": 1870,
+      "x": 422,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAGmAAAAAAAAB9UAAAdfAAABpgAAAAAAAAjzAAAICwAAAAACAAAADwAAAAGmAAAAAAAAB9UAAAdf"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 1015,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1015,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1015,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB2IAAAP2AAAAAAAAAAAAAAdiAAAD9gAAAAACAAAADwAAAAAAAAAAAAAAB2IAAAP2"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-choose-icon-theme-dialog-geometry": {
+    "frame_geometry": {
+      "height": 1739,
+      "width": 1702,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1739,
+      "width": 1702,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 2085,
+      "width": 900,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABqUAAAbKAAAAAAAAAAAAAAODAAAIJAAAAAACAAAADwAAAAAAAAAAAAAABqUAAAbK"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-convert_single_dialog_geom": {
+    "frame_geometry": {
+      "height": 1450,
+      "width": 1770,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1450,
+      "width": 1770,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1502,
+      "width": 2224,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABukAAAWpAAAAAAAAAAAAAAivAAAF3QAAAAACAAAADwAAAAAAAAAAAAAABukAAAWp"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-create-virtual-library-dialog": {
+    "frame_geometry": {
+      "height": 399,
+      "width": 1014,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 399,
+      "width": 1014,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 399,
+      "width": 1014,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAA/UAAAGOAAAAAAAAAAAAAAP1AAABjgAAAAACAAAADwAAAAAAAAAAAAAAA/UAAAGO"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-customize-palette-geometry": {
+    "frame_geometry": {
+      "height": 1187,
+      "width": 1488,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1187,
+      "width": 1488,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1187,
+      "width": 1488,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABc8AAASiAAAAAAAAAAAAAAXPAAAEogAAAAACAAAADwAAAAAAAAAAAAAABc8AAASi"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-metasingle_window_geometry3": {
+    "frame_geometry": {
+      "height": 2110,
+      "width": 3770,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 2110,
+      "width": 3770,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 2110,
+      "width": 3770,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAADrkAAAg9AAAAAAAAAAAAAA65AAAIPQAAAAACAAAADwAAAAAAAAAAAAAADrkAAAg9"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-preferences dialog geometry": {
+    "frame_geometry": {
+      "height": 1198,
+      "width": 1529,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1198,
+      "width": 1529,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1198,
+      "width": 1529,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAABfgAAAStAAAAAAAAAAAAAAX4AAAErQAAAAACAAAADwAAAAAAAAAAAAAABfgAAASt"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-quickview_dialog_geometry": {
+    "frame_geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 1317,
+      "y": 901
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 1317,
+      "y": 901
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 1317,
+      "y": 901
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAUlAAADhQAADIcAAAt8AAAFJQAAA4UAAAyHAAALfAAAAAACAAAADwAAAAUlAAADhQAADIcAAAt8"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-tag_editor_geometry": {
+    "frame_geometry": {
+      "height": 352,
+      "width": 600,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 352,
+      "width": 600,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 352,
+      "width": 600,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAAlcAAAFfAAAAAAAAAAAAAAJXAAABXwAAAAACAAAADwAAAAAAAAAAAAAAAlcAAAFf"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "grid view visible": false,
+  "library_usage_stats": {
+    "/home/jalhamer/Library": 39
+  },
+  "light_palette_name": "__current__",
+  "light_palettes": {
+    "__current__": {
+      "AlternateBase": "#eff1f5",
+      "Base": "#e6e9ef",
+      "BrightText": "#4c4f69",
+      "BrightText-disabled": "#4c4f69",
+      "Button": "#eff1f5",
+      "ButtonText": "#4c4f69",
+      "ButtonText-disabled": "#acb0be",
+      "Highlight": "#dcb6bb",
+      "HighlightedText": "#4c4f69",
+      "HighlightedText-disabled": "#e6e9ef",
+      "Link": "#dc8a78",
+      "LinkVisited": "#1e66f5",
+      "PlaceholderText": "#4c4f69",
+      "PlaceholderText-disabled": "#4c4f69",
+      "Text": "#4c4f69",
+      "Text-disabled": "#acb0be",
+      "ToolTipBase": "#dce0e8",
+      "ToolTipText": "#4c4f69",
+      "ToolTipText-disabled": "#4c4f69",
+      "Window": "#dce0e8",
+      "WindowText": "#4c4f69",
+      "WindowText-disabled": "#acb0be"
+    }
+  },
+  "main_window_central_widget_state": {
+    "layout": "wide",
+    "narrow_desires": {
+      "book_details_height": 0.23101952277657267,
+      "cover_browser_width": 0.349825378346915,
+      "quick_view_height": 0.2559652928416486,
+      "tag_browser_width": 0.24970896391152503
+    },
+    "narrow_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    },
+    "wide_desires": {
+      "book_details_width": 0.29976717112922,
+      "cover_browser_height": 0.28600201409869086,
+      "quick_view_height": 0.23766364551863042,
+      "tag_browser_width": 0.11316763617133792
+    },
+    "wide_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    }
+  },
+  "previous_sort_order_BooksView": {
+    "tags": false
+  },
+  "quick_start_guide_added": true,
+  "quickview_dialog_books_table_widths": [
+    300,
+    300,
+    300
+  ],
+  "qv_open_at_shutdown": false,
+  "recently_used_languages": [
+    "English"
+  ],
+  "replace_scene_breaks_history": [
+    "",
+    "<hr />",
+    "∗ ∗ ∗",
+    "• • •",
+    "♦ ♦ ♦",
+    "† †",
+    "‡ ‡ ‡",
+    "∞ ∞ ∞",
+    "¤ ¤ ¤"
+  ],
+  "search bar visible": true,
+  "show_vl_tabs": false,
+  "tag browser search box visible": false,
+  "tag_editor_last_filter": "add_tag_input"
+}

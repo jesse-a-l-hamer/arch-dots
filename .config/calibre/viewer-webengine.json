@@ -1,0 +1,368 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1013,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB2IAAAf3AAAAAAAAAAAAAAdiAAAD9AAAAAACAAAADwAAAAAAAAAAAAAAB2IAAAf3"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-viewer_image_popup_geometry": {
+    "frame_geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 2040,
+      "width": 1891,
+      "x": 0,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB2IAAAf3AAAAAAAAAAAAAAdiAAAH9wAAAAACAAAADwAAAAAAAAAAAAAAB2IAAAf3"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAJMA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAqAD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACWAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAQ8A////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAGAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAOoA////AAAHYwAAB/gAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "saved-search-settings": {
+    "have": {
+      "case_sensitive": false,
+      "mode": "normal"
+    }
+  },
+  "session_data": {
+    "base_font_size": 20,
+    "controls_footer": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "progress"
+    },
+    "controls_help_shown_count": 2,
+    "current_color_scheme": "system",
+    "footer": {
+      "left": "progress",
+      "middle": "pos-book",
+      "right": "pos-chapter"
+    },
+    "header": {
+      "left": "title",
+      "middle": "top-section",
+      "right": "section"
+    },
+    "keyboard_shortcuts": {
+      "back": [
+        {
+          "altKey": true,
+          "ctrlKey": false,
+          "key": "ArrowLeft",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "h",
+          "metaKey": false,
+          "shiftKey": true
+        }
+      ],
+      "forward": [
+        {
+          "altKey": true,
+          "ctrlKey": false,
+          "key": "ArrowRight",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "l",
+          "metaKey": false,
+          "shiftKey": true
+        }
+      ],
+      "left": [
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "ArrowLeft",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "h",
+          "metaKey": false,
+          "shiftKey": false
+        }
+      ],
+      "next_match": [
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "F3",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "Enter",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "n",
+          "metaKey": false,
+          "shiftKey": false
+        }
+      ],
+      "pagedown": [
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": " ",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "PageDown",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "j",
+          "metaKey": false,
+          "shiftKey": false
+        }
+      ],
+      "pageup": [
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "PageUp",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": " ",
+          "metaKey": false,
+          "shiftKey": true
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "k",
+          "metaKey": false,
+          "shiftKey": false
+        }
+      ],
+      "previous_match": [
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "F3",
+          "metaKey": false,
+          "shiftKey": true
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "Enter",
+          "metaKey": false,
+          "shiftKey": true
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "n",
+          "metaKey": false,
+          "shiftKey": true
+        }
+      ],
+      "right": [
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "ArrowRight",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "l",
+          "metaKey": false,
+          "shiftKey": false
+        }
+      ],
+      "toggle_hints": [
+        {
+          "altKey": true,
+          "ctrlKey": false,
+          "key": "f",
+          "metaKey": false,
+          "shiftKey": false
+        },
+        {
+          "altKey": false,
+          "ctrlKey": false,
+          "key": "f",
+          "metaKey": false,
+          "shiftKey": false
+        }
+      ]
+    },
+    "left-margin": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "empty"
+    },
+    "override_book_colors": "dark",
+    "read_mode": "paged",
+    "right-margin": {
+      "left": "empty",
+      "middle": "empty",
+      "right": "empty"
+    },
+    "standalone_font_settings": {
+      "mono_family": "VictorMono Nerd Font",
+      "sans_family": "Libertinus Sans",
+      "serif_family": "Libertinus Serif"
+    },
+    "standalone_misc_settings": {},
+    "standalone_recently_opened": [
+      {
+        "authors": [
+          "Larry Peterson",
+          "Bruce Davie"
+        ],
+        "key": "/home/jalhamer/Documents/calibre/Larry Peterson/Computer Networks_ A Systems Approach (2)/Computer Networks_ A Systems Approach - Larry Peterson.epub",
+        "pathtoebook": "/home/jalhamer/Documents/calibre/Larry Peterson/Computer Networks_ A Systems Approach (2)/Computer Networks_ A Systems Approach - Larry Peterson.epub",
+        "timestamp": "2025-10-31T23:28:38.725Z",
+        "title": "Computer Networks: A Systems Approach"
+      },
+      {
+        "authors": [
+          "Larry Peterson and Bruce Davie"
+        ],
+        "key": "/home/jalhamer/repositories/computer-networks-systems-approach-book/_build/ComputerNetworksASystemsApproach.epub",
+        "pathtoebook": "/home/jalhamer/repositories/computer-networks-systems-approach-book/_build/ComputerNetworksASystemsApproach.epub",
+        "timestamp": "2025-10-24T21:47:58.333Z",
+        "title": "Computer Networks: A Systems Approach"
+      },
+      {
+        "authors": [
+          "Larry Peterson"
+        ],
+        "key": "/home/jalhamer/Documents/calibre/Larry Peterson/Computer Networks_ A Systems Approach (2)/Computer Networks_ A Systems Approach - Larry Peterson.original_epub",
+        "pathtoebook": "/home/jalhamer/Documents/calibre/Larry Peterson/Computer Networks_ A Systems Approach (2)/Computer Networks_ A Systems Approach - Larry Peterson.original_epub",
+        "timestamp": "2025-10-24T21:06:29.102Z",
+        "title": "Computer Networks  A Systems Approach"
+      },
+      {
+        "authors": [
+          "John Schember"
+        ],
+        "key": "/home/jalhamer/Documents/calibre/John Schember/Quick Start Guide (1)/Quick Start Guide - John Schember.epub",
+        "pathtoebook": "/home/jalhamer/Documents/calibre/John Schember/Quick Start Guide (1)/Quick Start Guide - John Schember.epub",
+        "timestamp": "2025-08-27T21:46:16.529Z",
+        "title": "Quick Start Guide"
+      }
+    ]
+  },
+  "viewer-search-case-sensitive": false,
+  "viewer-search-mode": "normal"
+}
