@@ -1,0 +1,42 @@
+#!/bin/zsh
+_usage='Usage (kpxc):
+  - kpxc [--help] | [-help] | [-h]
+  - kpxc <command> [options] [args]
+
+This is a wrapper around keepassxc-cli. In general, the arguments will
+be passed unaltered to keepassxc-cli (unless --help, -help, or -h are passed, in
+which case this message is printed along with the help message for keepassxc-cli).
+
+However, if the following conditions are satisfied:
+
+  1. Environment variables KEEPASSXC_VAULT and KEEPASSXC_KEY are set;
+  2. The EXACT value of $KEEPASSXC_VAULT is found in the given arguments,
+
+Then the file $KEEPASSXC_KEY will be decrypted and piped to keepassxc-cli, called with
+the given arguments. (In this case, the -q flag is also passed to prevent the password
+prompt from appearing).
+
+Notes:
+  - Passing --help | -help | -h will always short-circuit the execution in order to
+    print this message, no matter where in the argument list it is passed.
+  - Except perhaps for the aforementioned help options, kpxc assumes that the first
+    argument is a keepassxc-cli subcommand, documented in the help text below.
+  - When KEEPASSXC_VAULT and KEEPASSXC_KEY are present, the -q/--quiet flag should
+    not be passed explicitly.
+'
+
+if [[ $@ =~ ".*--?h(elp)?.*" ]]; then
+    echo $_usage
+    hr
+    echo ""
+    keepassxc-cli --help
+    exit
+fi
+
+_cmd="$1"; shift
+if [[ -n $KEEPASSXC_VAULT && -n $KEEPASSXC_KEY && $@ =~ ".*$KEEPASSXC_VAULT.*" ]]; then
+    gpg -q --decrypt $KEEPASSXC_KEY | keepassxc-cli "$_cmd" -q "$@"
+else
+    keepassxc-cli "$_cmd" "$@"
+fi
+
