@@ -1,0 +1,116 @@
+{
+    "palettes": {
+        "catppuccin": [
+            [
+                "header",
+                "white",
+                "dark blue",
+                "standout",
+                "#CAD3F5",
+                "#8AADF4"
+            ],
+            [
+                "footer",
+                "white",
+                "dark red",
+                "standout",
+                "#CAD3F5",
+                "#ED8796"
+            ],
+            [
+                "search",
+                "white",
+                "dark green",
+                "standout",
+                "#CAD3F5",
+                "#A6DA95"
+            ],
+            [
+                "msgtext",
+                "",
+                "",
+                "",
+                "#CAD3F5",
+                "#24273A"
+            ],
+            [
+                "msgtext:ellipses",
+                "light gray",
+                "black",
+                "",
+                "#B7BDF8",
+                "#24273A"
+            ],
+            [
+                "urlref:number:braces",
+                "light gray",
+                "black",
+                "",
+                "#B7BDF8",
+                "#24273A"
+            ],
+            [
+                "urlref:number",
+                "yellow",
+                "black",
+                "standout",
+                "#EED49F",
+                "#24273A"
+            ],
+            [
+                "urlref:url",
+                "white",
+                "black",
+                "standout",
+                "#C6A0F6",
+                "#24273A"
+            ],
+            [
+                "url:sel",
+                "white",
+                "dark blue",
+                "bold",
+                "#F4DBD6",
+                "#363A4F"
+            ]
+        ]
+    },
+    "keys": {
+        "/": "search_key",
+        "0": "digits",
+        "1": "digits",
+        "2": "digits",
+        "3": "digits",
+        "4": "digits",
+        "5": "digits",
+        "6": "digits",
+        "7": "digits",
+        "8": "digits",
+        "9": "digits",
+        "a": "add_url",
+        "C": "clipboard",
+        "c": "context",
+        "ctrl l": "clear_screen",
+        "ctrl f": "page_down",
+        "ctrl b": "page_up",
+        "d": "del_url",
+        "f1": "help_menu",
+        "G": "bottom",
+        "g": "top",
+        "j": "down",
+        "k": "up",
+        "J": "next",
+        "K": "previous",
+        "P": "clipboard_pri",
+        "l": "link_handler",
+        "o": "open_queue",
+        "O": "open_queue_win",
+        "p": "palette",
+        "Q": "quit",
+        "q": "quit",
+        "R": "reverse",
+        "S": "all_shorten",
+        "s": "shorten",
+        "u": "all_escape"
+    }
+}
