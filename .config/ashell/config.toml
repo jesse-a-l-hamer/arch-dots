@@ -53,7 +53,7 @@ clipboard_cmd    = "walker -m clipboard"
   format = "  %A, %Y-%m-%d   %H:%M:%S:%z"
 
 [settings]
-  # lock_cmd      = "sh -c '(sleep 0.5s; app2unit -- hyprlock --grace 60)' & disown"
+  lock_cmd      = "loginctl lock-session"
   shutdown_cmd  = "systemctl poweroff"
   suspend_cmd   = "systemctl suspend"
   hibernate_cmd = "systemctl hibernate"
