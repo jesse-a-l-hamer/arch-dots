@@ -1,0 +1,5 @@
+[Path]
+PathChanged=%h/Mail/.notmuch
+
+[Install]
+WantedBy=default.target
