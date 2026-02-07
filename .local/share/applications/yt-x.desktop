@@ -1,7 +1,6 @@
 [Desktop Entry]
 Name=yt-x
 Type=Application
-version=0.4.5
 Comment=Browse Youtube from the terminal
 Terminal=true
 Icon=youtube
