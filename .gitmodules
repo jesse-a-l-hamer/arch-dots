@@ -43,3 +43,6 @@
 [submodule ".config/neomutt"]
 	path = .config/neomutt
 	url = https://github.com/jesse-a-l-hamer/neomutt-dots
+[submodule ".config/catppuccin-themes/libreoffice"]
+	path = .config/catppuccin-themes/libreoffice
+	url = https://github.com/catppuccin/libreoffice
