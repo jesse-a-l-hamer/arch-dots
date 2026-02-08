@@ -4,7 +4,8 @@ After=network-online.target nss-lookup.target
 Wants=network-online.target
 
 [Service]
-ExecStart=/usr/bin/ghostmirror -mul %E/ghostmirror/mirrorlist.all %E/ghostmirror/mirrorlist -s light -S state,outofdate,morerecent,estimated,speed
+ExecStartPre=touch %E/ghostmirror/mirrorlist.gm.bak
+ExecStart=/usr/bin/ghostmirror -Po -mu %E/ghostmirror/mirrorlist.all -l %E/ghostmirror/mirrorlist -T https -s light -S state,uptodate,morerecent,estimated,speed
 Type=oneshot
 Restart=on-failure
 RestartSec=30m
