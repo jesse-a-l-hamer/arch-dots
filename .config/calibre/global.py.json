@@ -36,7 +36,7 @@
     "publisher"
   ],
   "manage_device_metadata": "manual",
-  "mark_new_books": false,
+  "mark_new_books": true,
   "migrated": false,
   "network_timeout": 5,
   "new_book_tags": [],

@@ -1,28 +1,28 @@
 {
   "geometry-of-main_window_geometry": {
     "frame_geometry": {
-      "height": 2040,
-      "width": 1891,
+      "height": 2064,
+      "width": 1831,
       "x": 0,
       "y": 0
     },
     "full_screened": false,
     "geometry": {
-      "height": 2040,
-      "width": 1891,
+      "height": 2064,
+      "width": 1831,
       "x": 0,
       "y": 0
     },
     "maximized": true,
     "normal_geometry": {
-      "height": 1013,
-      "width": 1891,
+      "height": 1015,
+      "width": 1951,
       "x": 0,
       "y": 0
     },
     "qt": {
       "__class__": "bytearray",
-      "__value__": "AdnQywADAAAAAAAAAAAAAAAAB2IAAAf3AAAAAAAAAAAAAAdiAAAD9AAAAAACAAAADwAAAAAAAAAAAAAAB2IAAAf3"
+      "__value__": "AdnQywADAAAAAAAAAAAAAAAAByYAAAgPAAAAAAAAAAAAAAeeAAAD9gAAAAACAAAADwAAAAAAAAAAAAAAByYAAAgP"
     },
     "screen": {
       "depth": 32,
@@ -103,7 +103,7 @@
   },
   "main_window_state": {
     "__class__": "bytearray",
-    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAJMA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAqAD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACWAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAQ8A////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAGAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAOoA////AAAHYwAAB/gAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAJMA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAAqAD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACWAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAQ8A////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAGAD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAOoA////AAAHJwAACBAAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
   },
   "old_prefs_migrated": true,
   "saved-search-settings": {
@@ -324,6 +324,24 @@
     },
     "standalone_misc_settings": {},
     "standalone_recently_opened": [
+      {
+        "key": "/home/jalhamer/Library/Unknown/Think Python_ How to Think Like a Computer Scientist (113)/Think Python_ How to Think Like a Computer - Unknown.epub",
+        "pathtoebook": "/home/jalhamer/Library/Unknown/Think Python_ How to Think Like a Computer Scientist (113)/Think Python_ How to Think Like a Computer - Unknown.epub",
+        "timestamp": "2026-02-11T15:34:31.179Z",
+        "title": "thinkpython"
+      },
+      {
+        "key": "/home/jalhamer/Library/Unknown/A Short and Dirty Introduction to Hyperbolic Surfaces (130)/A Short and Dirty Introduction to Hyperbol - Unknown.epub",
+        "pathtoebook": "/home/jalhamer/Library/Unknown/A Short and Dirty Introduction to Hyperbolic Surfaces (130)/A Short and Dirty Introduction to Hyperbol - Unknown.epub",
+        "timestamp": "2026-02-11T15:27:39.093Z",
+        "title": "HypGeom"
+      },
+      {
+        "key": "/home/jalhamer/Library/Unknown/Kirwan F. An introduction to intersection homology theory (Pitman Research Notes in Math. 187, (104)/Kirwan F. An introduction to intersection - Unknown.epub",
+        "pathtoebook": "/home/jalhamer/Library/Unknown/Kirwan F. An introduction to intersection homology theory (Pitman Research Notes in Math. 187, (104)/Kirwan F. An introduction to intersection - Unknown.epub",
+        "timestamp": "2026-02-11T15:20:37.380Z",
+        "title": "Kirwan F. An introduction to intersection homology theory (Pitman Research Notes in Math. 187, Longman, 1988)(600dpi)(L)(T)(89s) MAg"
+      },
       {
         "authors": [
           "Larry Peterson",

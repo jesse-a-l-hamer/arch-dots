@@ -20,10 +20,6 @@
       false
     ],
     [
-      "tags",
-      true
-    ],
-    [
       "timestamp",
       false
     ],
@@ -32,6 +28,7 @@
       false
     ]
   ],
+  "systray_msg": true,
   "welcome_wizard_device": "default",
   "welcome_wizard_was_run": true
 }

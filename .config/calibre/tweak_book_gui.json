@@ -109,6 +109,57 @@
     "where": "current",
     "wrap": true
   },
+  "geometry-of-action-chains-manage-modules-geometry": {
+    "frame_geometry": {
+      "height": 251,
+      "width": 371,
+      "x": 780,
+      "y": 342
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 251,
+      "width": 371,
+      "x": 780,
+      "y": 342
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 251,
+      "width": 371,
+      "x": 780,
+      "y": 342
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAMMAAABVgAABH4AAAJQAAADDAAAAVYAAAR+AAACUAAAAAACAAAADwAAAAMMAAABVgAABH4AAAJQ"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "Samsung Electric Company",
+      "model": "QCQ90",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 2160,
+        "width": 3840
+      },
+      "virtual_geometry": {
+        "height": 2160,
+        "width": 3840,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
   "geometry-of-import-foreign-geometry": {
     "frame_geometry": {
       "height": 2054,

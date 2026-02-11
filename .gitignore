@@ -13,3 +13,6 @@
 /.jupyter/migrated
 /.local/bin/uu2gslice.sh
 /.config/QtProject.conf
+/.config/calibre/viewer/annots
+/.config/calibre/newly-installed-editor-plugins.json
+/.config/calibre/history.plist
