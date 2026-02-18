@@ -1,6 +1,6 @@
 -o ~/Videos/yt-dlp/%(title)s.%(ext)s
 -f "bestvideo*[height>=1080]+bestaudio/best[height>=1080]/best"
---cookies-from-browser firefox:~/.zen/personal/
+--cookies-from-browser firefox:~/.config/zen/personal/
 --downloader aria2c
 --downloader-args aria2c:'-c -j 3 -x 3 -s 3 -k 1M'
 --extractor-args "youtubepot-bgutilhttp:base_url=http://127.0.0.1:4416"
