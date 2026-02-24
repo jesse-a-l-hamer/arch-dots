@@ -17,3 +17,5 @@
 /.config/calibre/newly-installed-editor-plugins.json
 /.config/calibre/history.plist
 /.config/ghostmirror/mirrorlist.gm.bak
+/.local/bin/beantools-gen_accounts
+/.local/bin/beantools-ingest
