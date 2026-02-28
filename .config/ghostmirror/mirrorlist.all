@@ -1,6 +1,6 @@
 ##
 ## Arch Linux repository mirrorlist
-## Generated on 2026-01-05
+## Generated on 2026-02-13
 ##
 
 ## Worldwide
@@ -16,6 +16,7 @@ Server = https://mirror.cpsc.ucalgary.ca/mirror/archlinux.org/$repo/os/$arch
 Server = https://mirror.csclub.uwaterloo.ca/archlinux/$repo/os/$arch
 Server = https://mirror2.evolution-host.com/archlinux/$repo/os/$arch
 Server = https://mirror.franscorack.com/archlinux/$repo/os/$arch
+Server = https://ca.mirror.cx/archlinux/$repo/os/$arch
 Server = https://mirror.quantum5.ca/archlinux/$repo/os/$arch
 Server = https://muug.ca/mirror/archlinux/$repo/os/$arch
 Server = https://mirrors.pablonara.com/archlinux/$repo/os/$arch
@@ -23,13 +24,13 @@ Server = https://upstream-1.pablonara.com/archlinux/$repo/os/$arch
 Server = https://mirror.scd31.com/arch/$repo/os/$arch
 Server = https://mirror.xenyth.net/archlinux/$repo/os/$arch
 
-
 ## Mexico
 Server = https://lidsol.fi-b.unam.mx/archlinux/$repo/os/$arch
 Server = https://arch.jsc.mx/$repo/os/$arch
 
 ## United States
 Server = https://mirror.adectra.com/archlinux/$repo/os/$arch
+Server = https://mirror.akane.network/archmirror/$repo/os/$arch
 Server = https://mirror.arizona.edu/archlinux/$repo/os/$arch
 Server = https://arlm.tyzoid.com/$repo/os/$arch
 Server = https://mirrors.bloomu.edu/archlinux/$repo/os/$arch
@@ -61,10 +62,10 @@ Server = https://arch.hugeblank.dev/$repo/os/$arch
 Server = https://repo.ialab.dsu.edu/archlinux/$repo/os/$arch
 Server = https://mirrors.iu13.net/archlinux/$repo/os/$arch
 Server = https://arch.mirror.k0.ae/$repo/os/$arch
-Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch
 Server = https://mirrors.lahansons.com/archlinux/$repo/os/$arch
 Server = https://mirror.sfo12.us.leaseweb.net/archlinux/$repo/os/$arch
 Server = https://mirror.wdc1.us.leaseweb.net/archlinux/$repo/os/$arch
+Server = https://mirrors.logal.dev/archlinux/$repo/os/$arch
 Server = https://mirrors.lug.mtu.edu/archlinux/$repo/os/$arch
 Server = https://m.lqy.me/arch/$repo/os/$arch
 Server = https://arch.mirror.marcusspencer.us:4443/archlinux/$repo/os/$arch
@@ -72,7 +73,6 @@ Server = https://arch.miningtcup.me/$repo/os/$arch
 Server = https://mirrors.shr.cx/arch/$repo/os/$arch
 Server = https://iad.mirrors.misaka.one/archlinux/$repo/os/$arch
 Server = https://mirrors.mit.edu/archlinux/$repo/os/$arch
-Server = https://mirror.mra.sh/archlinux/$repo/os/$arch
 Server = https://us.arch.niranjan.co/$repo/os/$arch
 Server = https://mirrors.ocf.berkeley.edu/archlinux/$repo/os/$arch
 Server = https://archmirror1.octyl.net/$repo/os/$arch
