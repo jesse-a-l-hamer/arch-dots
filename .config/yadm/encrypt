@@ -1,0 +1,13 @@
+.config/neomutt-private
+.config/isyncrc
+.config/vdirsyncer
+.config/oama
+.config/notmuch
+.config/msmtp
+.config/khal
+.config/khard
+.config/imapnotify
+.config/gh/hosts.yml
+.ssh
+.gnupg
+.face.icon

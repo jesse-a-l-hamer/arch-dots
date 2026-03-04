@@ -46,3 +46,6 @@
 [submodule ".config/catppuccin-themes/libreoffice"]
 	path = .config/catppuccin-themes/libreoffice
 	url = https://github.com/catppuccin/libreoffice
+[submodule ".config/private-dots"]
+	path = .config/private-dots
+	url = https://github.com/jesse-a-l-hamer/private-dots
