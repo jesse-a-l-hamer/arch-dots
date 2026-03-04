@@ -21,3 +21,12 @@ __pycache__
 /.local/bin/beantools-gen_accounts
 /.local/bin/beantools-ingest
 /.local/bin/beantools
+/.pulse-cookie
+/.steam
+/.local/bin/keymapp
+/Games
+/.steampath
+/.steampid
+/.config/.keymapp
+/.config/modorganizer2/instances
+/.config/wally
