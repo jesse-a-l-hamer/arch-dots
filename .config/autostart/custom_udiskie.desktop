@@ -4,4 +4,4 @@ Name=Udiskie
 NoDisplay=true
 OnlyShowIn=wlroots;Hyprland
 TryExec=udiskie
-Exec=sh -c 'sleep 10 && udiskie -s'
+Exec=sh -c 'sleep 10 && udiskie -t -f yazi --terminal=kitty'
