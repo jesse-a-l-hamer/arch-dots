@@ -22,3 +22,6 @@ Usage = Sync Search
 
 [chaotic-aur]
 Include = /etc/pacman.d/chaotic-mirrorlist
+
+[linux-surface]
+Server = https://pkg.surfacelinux.com/arch/
