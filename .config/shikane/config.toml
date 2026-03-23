@@ -38,6 +38,18 @@
     adaptive_sync = false
 
 [[profile]]
+  name = "surface-builtin"
+  exec = ["notify-send -a shikane -i display -t 5000 \"profile applied\" \"$SHIKANE_PROFILE_NAME\""]
+  [[profile.output]]
+    enable        = true
+    search        = ["d=LG Display 0x06B1 0x002127A1", "n/eDP-[1-9]", "m=0x06B1", "s=0x002127A1", "v=LG Display"]
+    mode          = "2880x1920@120.00Hz"
+    position      = "0,0"
+    scale         = 1.5
+    transform     = "normal"
+    adaptive_sync = false
+
+[[profile]]
   name = "undocked"
   exec = ["notify-send -a shikane -i display -t 5000 \"profile applied\" \"$SHIKANE_PROFILE_NAME\""]
   [[profile.output]]
