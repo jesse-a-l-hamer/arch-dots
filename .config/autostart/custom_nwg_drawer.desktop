@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=App Drawer
+NoDisplay=true
+OnlyShowIn=wlroots;Hyprland
+TryExec=nwg-drawer
+Exec=sh -c 'sleep 10 && /home/jalhamer/.scripts/toggle_nwg-drawer.sh'
