@@ -1,0 +1,41 @@
+window {
+    background-color: rgba(30, 32, 48, 0.80);
+    color: #cad3f5
+}
+
+/* search entry */
+entry {
+    background-color: rgba(24, 25, 38, 0.2)
+}
+
+button, image {
+    background: none;
+    border: none
+}
+
+button:hover {
+    background-color: rgba(240, 198, 198, 0.8);
+    color: #24273a
+}
+
+/* in case you wanted to give category buttons a different look */
+#category-button {
+    margin: 0 10px 0 10px
+}
+
+#pinned-box {
+    padding-bottom: 5px;
+    border-bottom: 1px dotted gray
+}
+
+#files-box {
+    padding: 5px;
+    border: 1px dotted gray;
+    border-radius: 15px
+}
+
+/* math operation result label */
+#math-label {
+    font-weight: bold;
+    font-size: 16px
+}
