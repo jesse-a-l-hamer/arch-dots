@@ -3,5 +3,5 @@ Type=Application
 Name=syncthingtray
 NoDisplay=true
 OnlyShowIn=wlroots;Hyprland
-TryExec=syncthingtray
-Exec=sh -c 'sleep 10 && syncthingtray qt-widgets-gui --single-instance --wait'
+TryExec=syncthingtray-qt6
+Exec=sh -c 'sleep 10 && syncthingtray-qt6 qt-widgets-gui --single-instance --wait'
