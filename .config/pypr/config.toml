@@ -1,0 +1,90 @@
+[pyprland]
+plugins = [
+  "scratchpads",
+  "gamemode",
+  "magnify",
+  "expose",
+  "menubar",
+  "fetch_client_menu",
+  "layout_center",
+  "system_notifier",
+  "toggle_special",
+]
+notification_type = "notify-send"
+
+[menubar]
+command = "app2unit -- waybar"
+
+[fetch_client_menu]
+engine = "rofi"
+
+[layout_center]
+next = "cyclenext"
+prev = "cyclenext prev"
+
+[scratchpads.email]
+animation = "fromRight"
+command = "app2unit kitty --class kitty-neomutt neomutt"
+class = "kitty-neomutt"
+size = "40% 90%"
+lazy = true
+
+[scratchpads.file_manager]
+animation = "fromTop"
+command = "app2unit kitty --class kitty-yazi yazi"
+class = "kitty-yazi"
+position = "48% 2%"
+size = "50% 35%"
+lazy = true
+
+[scratchpads.system_monitor]
+animation = "fromTop"
+command = "app2unit kitty --class kitty-btop btop"
+class = "kitty-btop"
+size = "90% 60%"
+lazy = true
+
+[scratchpads.calendar]
+animation = "fromTop"
+command = "app2unit kitty --class kitty-ikhal ikhal"
+class = "kitty-ikhal"
+position = "2% 2%"
+size = "50% 50%"
+lazy = true
+
+[scratchpads.sms]
+animation = "fromLeft"
+command = "app2unit -- kdeconnect-sms"
+class = "org.kde.kdeconnect.sms"
+size = "60% 90%"
+lazy = true
+
+[scratchpads.browser]
+animation = "fromBottom"
+command = "app2unit -- zen-browser"
+class = "zen"
+position = "2% 18%"
+size = "45% 80%"
+lazy = true
+
+[scratchpads.unit_monitor]
+animation = "fromBottom"
+command = "app2unit kitty --class kitty-isd isd"
+class = "kitty-isd"
+size = "90% 60%"
+lazy = true
+
+[scratchpads.term]
+animation = "fromBottom"
+command = "app2unit kitty --class kitty-dropterm"
+class = "kitty-dropterm"
+position = "48% 38%"
+size = "50% 60%"
+lazy = true
+
+[system_notifier]
+use_notify_send = true
+
+[[system_notifier.sources]]
+command = "journalctl -fx"
+parser = "journal"
