@@ -61,8 +61,10 @@ lazy = true
 
 [scratchpads.browser]
 animation = "fromBottom"
-command = "app2unit -- zen-browser"
-class = "zen"
+# command = "app2unit -- zen-browser"
+# class = "zen"
+command = "app2unit -- brave"
+class = "brave-browser"
 position = "2% 18%"
 size = "45% 80%"
 lazy = true
