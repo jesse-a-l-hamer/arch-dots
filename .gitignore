@@ -36,3 +36,5 @@ __pycache__
 /.local/bin/wvkbd-colemakdh
 /.config/syncthingtray.ini
 /.ollama/history
+/.config/calibre/fonts
+/.config/calibre/gui.json
