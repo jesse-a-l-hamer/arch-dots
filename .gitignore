@@ -38,3 +38,4 @@ __pycache__
 /.ollama/history
 /.config/calibre/fonts
 /.config/calibre/gui.json
+/.config/isd_tui/schema.json
