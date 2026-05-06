@@ -35,3 +35,4 @@ __pycache__
 /.config/elinks/cookies
 /.local/bin/wvkbd-colemakdh
 /.config/syncthingtray.ini
+/.ollama/history
