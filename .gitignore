@@ -39,3 +39,4 @@ __pycache__
 /.config/calibre/fonts
 /.config/calibre/gui.json
 /.config/isd_tui/schema.json
+/.config/zoom/qtsingleapp-zoom-3e8-lockfile
