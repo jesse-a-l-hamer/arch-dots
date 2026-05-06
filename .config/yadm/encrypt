@@ -8,6 +8,7 @@
 .config/khard
 .config/imapnotify
 .config/gh/hosts.yml
+.config/weathr/config.toml
 .ssh
 .gnupg
 .face.icon
