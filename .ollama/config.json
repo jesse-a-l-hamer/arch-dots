@@ -2,11 +2,11 @@
   "integrations": {
     "opencode": {
       "models": [
-        "qwen3.5",
-        "gemma4"
+        "gemma4",
+        "qwen3.5"
       ]
     }
   },
   "last_model": "gemma4",
-  "last_selection": "run"
+  "last_selection": "opencode"
 }
