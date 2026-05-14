@@ -1,0 +1,2 @@
+MSMTPQ_Q=~/.local/state/msmtpq/queue
+MSMTPQ_LOG=~/.local/state/msmtpq/queue.log
