@@ -1,0 +1,69 @@
+#!/usr/bin/sh
+
+# This script calls a hyprctl dispatcher in order to toggle some window property, and
+# then sends a notification to indicate the change made.
+
+# The first argument is assumed to be the name of the dispatcher being called.
+#   - Check the output of hyprctl activewindow -j to see possible properties.
+
+# Logic:
+# - get property associated to input logic
+
+get_property() {
+    case "$dispatcher" in
+    togglegroup)
+        property=grouped
+        ;;
+    togglefloating)
+        property=floating
+        ;;
+    pin)
+        property=pinned
+        ;;
+    pseudo)
+        property=pseudo
+        ;;
+    toggleswallow)
+        property=swallowing
+        ;;
+    *)
+        exit
+        ;;
+    esac
+}
+
+call_dispatcher() {
+    hyprctl dispatch "$dispatcher" active
+}
+
+send_notification() {
+    activewindow=$(hyprctl activewindow -j)
+
+    case "$property" in
+    grouped)
+        value=$(echo "$activewindow" | jq '.grouped | length > 0')
+        ;;
+    swallowing)
+        swallowed_address=$(echo "$activewindow" | jq -r '.swallowing')
+        if [ "$swallowed_address" = '0x0' ]; then
+            value="None"
+        else
+            value="$swallowed_address ($(hyprctl clients -j | jq -r --arg OTHER "$swallowed_address" '.[] | select(.address == $OTHER) | .class'))"
+        fi
+        ;;
+    *)
+        value=$(echo "$activewindow" | jq -r --arg P "$property" '.[$P]')
+        ;;
+    esac
+
+    summary="$property  $value"
+
+    body="$(echo "$activewindow" | jq '(.address | length) as $max_len | (.title | length) as $title_len  | {address, class, title: (if $title_len > $max_len then .title[:$max_len] + "..." else .title end), pid}')"
+
+    notify-send -a Hyprland -u low -t 3000 -c hypr "$summary" "$body"
+}
+
+dispatcher=$1
+get_property
+call_dispatcher
+send_notification

@@ -1,0 +1,35 @@
+#!/bin/sh
+# Taken from https://github.com/1amSimp1e/dots/blob/balcony%F0%9F%9A%8A/configs/hypr/scripts/volume
+
+down() {
+  pamixer -d 2
+  volume=$(pamixer --get-volume)
+  [ "$volume" -gt 0 ] && volume=$((volume))
+  notify-send -a "Volume" -c volume -h int:value:"$volume" -i audio-volume-low -r 2593 -u normal "Decreasing to $volume%"
+  canberra-gtk-play -i audio-volume-change -d "changevolume"
+}
+
+up() {
+  pamixer -i 2
+  volume=$(pamixer --get-volume)
+  [ "$volume" -lt 1000 ] && volume=$((volume))
+  notify-send -a "Volume" -c volume -h int:value:"$volume" -i audio-volume-high -r 2593 -u normal "Increasing to $volume%"
+  canberra-gtk-play -i audio-volume-change -d "changevolume"
+}
+
+mute() {
+  muted="$(pamixer --get-mute)"
+  if $muted; then
+    pamixer -u
+    notify-send -a "Volume" -c volume -i audio-volume-high -r 2593 -u normal "unmuted"
+  else
+    pamixer -m
+    notify-send -a "Volume" -c volume -i audio-volume-muted -r 2593 -u normal "muted"
+  fi
+}
+
+case "$1" in
+up) up ;;
+down) down ;;
+mute) mute ;;
+esac

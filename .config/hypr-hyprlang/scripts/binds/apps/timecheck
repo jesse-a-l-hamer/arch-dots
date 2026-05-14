@@ -1,0 +1,30 @@
+#!/bin/sh
+
+TIME_CHECK_OPTS=-a "Time Check" -c timecheck-notification -i "/usr/share/icons/Papirus/32x32/apps/d-tracker.svg"
+TIME_CHECK_FILE=/tmp/timecheck-$(whoami)/notification
+
+toggle() {
+    if [ "$(systemctl --user is-active timecheck.timer)" = "active" ]; then
+        systemctl --user stop timecheck.timer
+        notify-send $TIME_CHECK_OPTS "stopped timecheck timer" ""
+    elif [ -e "$TIME_CHECK_FILE" ]; then
+        systemctl --user start timecheck.timer
+        notify-send $TIME_CHECK_OPTS "restarted timecheck timer" ""
+    else
+        systemctl --user start timecheck.timer
+    fi
+}
+
+delete() {
+    if [ -e "$TIME_CHECK_FILE" ]; then
+        rm "$TIME_CHECK_FILE"
+        notify-send $TIME_CHECK_OPTS "Deleted existing timer" ""
+    else
+        notify-send $TIME_CHECK_OPTS "No existing timer found" ""
+    fi
+}
+
+case "$1" in
+toggle) toggle ;;
+delete) delete ;;
+esac
