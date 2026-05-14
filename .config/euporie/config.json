@@ -1,8 +1,15 @@
 {
   "preview": {
-    "recent_files": [
-      "/home/jalhamer/Downloads/google_drive-personal/icloud/Python/exam_performance_data_analysis/EDA_and_cleaning.ipynb",
-      "/mnt/openbook-extra/data/work/projects/aird-generate-development/src/aird_generate_dev/projects/ahima/cca_ccs_ccsp/notebooks/exploration/v1/cca/mcq.ipynb"
-    ]
+    "recent_files": []
+  },
+  "notebook": {
+    "show_cell_borders": true,
+    "show_side_bar": true,
+    "side_bar_width": 24,
+    "syntax_theme": "euporie",
+    "recent_files": [],
+    "color_scheme": "default",
+    "edit_mode": "vi",
+    "line_numbers": false
   }
 }
