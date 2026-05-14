@@ -1,0 +1,8 @@
+[system_notifier]
+use_notify_send = true
+
+[[system_notifier.sources]]
+command = "journalctl -fx"
+parser = "journal"
+
+

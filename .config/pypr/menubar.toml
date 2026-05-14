@@ -1,0 +1,4 @@
+[menubar]
+command = "app2unit -- waybar"
+
+
