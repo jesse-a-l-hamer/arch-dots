@@ -35,14 +35,6 @@
   size      = "60% 90%"
   lazy      = true
 
-[scratchpads.vault]
-  animation = "fromLeft"
-  command   = "app2unit -- org.keepassxc.KeePassXC.desktop"
-  class     = "org.keepassxc.KeePassXC"
-  position  = "2% 2%"
-  size      = "45% 35%"
-  lazy      = true
-
 [scratchpads.browser]
   animation = "fromLeft"
   command   = "app2unit -- zen-browser"
