@@ -1,4 +1,5 @@
 [menubar]
-command = "app2unit -- waybar"
+# command = "app2unit -- waybar"
+# command = "/usr/bin/app2unit -s s -- wayle panel start"
 
 

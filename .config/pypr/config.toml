@@ -4,20 +4,20 @@ plugins = [
   "gamemode",
   "magnify",
   "expose",
-  "menubar",
+  # "menubar",
   "fetch_client_menu",
   "layout_center",
   "system_notifier",
   "toggle_special",
-  "wallpapers",
+  # "wallpapers",
 ]
 notification_type = "notify-send"
 include = [
   "~/.config/pypr/fetch_client_menu.toml",
   "~/.config/pypr/layout_center.toml",
-  "~/.config/pypr/menubar.toml",
+  # "~/.config/pypr/menubar.toml",
   "~/.config/pypr/scratchpads.toml",
   "~/.config/pypr/system_notifier.toml",
-  "~/.config/pypr/wallpapers.toml",
+  # "~/.config/pypr/wallpapers.toml",
 ]
 
