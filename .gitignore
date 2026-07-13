@@ -43,3 +43,15 @@ __pycache__
 /.config/XaoS Project/XaoS.conf
 /.ollama/backup
 /Projects
+/.atuin/logs
+/.config/calibre
+/.config/concord/concord.log
+/.config/doctl/config.yaml
+/.config/termusic/data.db
+/.config/termusic/library2.db
+/.config/termusic/playlist.log
+/.config/termusic/themes
+/.sage/cache
+/.maxima/test-directory-cached/5_49_0/ecl/26_5_5
+/.docker
+/.rustowl
