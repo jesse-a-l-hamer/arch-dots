@@ -1,0 +1,102 @@
+[general]
+font-sans = "Libertinus Sans"
+font-mono = "VictorMono Nerd Font"
+
+[bar]
+layer = "overlay"
+background-opacity = 90
+border-location = "bottom"
+dropdown-opacity = 90
+dropdown-autohide = false
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    { name = "workspace-window", modules = [
+    "hyprland-workspaces",
+    "window-title",
+] },
+    { name = "media", modules = [
+    "media",
+    "cava",
+] },
+    "systray",
+]
+center = [
+    { name = "earth", modules = [
+    "weather",
+    "clock",
+    "world-clock",
+] },
+    "notifications",
+]
+
+[[bar.layout.right]]
+name = "connectivity"
+modules = [
+    "bluetooth",
+    "network",
+    "microphone",
+    "volume",
+]
+
+[[bar.layout.right]]
+name = "sys control"
+modules = [
+    "keybind-mode",
+    "keyboard-input",
+    "idle-inhibit",
+    "updates",
+    "dashboard",
+]
+
+[styling.palette]
+bg = "#181926"
+surface = "#1e2030"
+elevated = "#24273a"
+fg = "#cad3f5"
+fg-muted = "#b8c0e0"
+primary = "#b7bdf8"
+red = "#ed8796"
+yellow = "#eed49f"
+green = "#a6da95"
+blue = "#8aadf4"
+
+[modules.cava]
+style = "wave"
+
+[modules.clock]
+format = "%a %b %d %H:%M"
+dropdown-show-seconds = true
+
+[modules.cpu]
+format = "{{ percent }}% | {{ temp_c }}℃"
+
+[modules.hyprland-workspaces]
+show-special = false
+app-icons-show = true
+
+[modules.idle-inhibit]
+format = "{{ state }} ({{ remaining }})"
+
+[modules.notifications]
+popup-position = "top-center"
+
+[modules.weather]
+location = "Iowa City"
+time-format = "24h"
+
+[modules.window-title]
+format = "{{ title }} [{{ app }}]"
+
+[osd]
+position = "top-left"
+
+[wallpaper]
+transition-type = "random"
+transition-duration = 1.0
+transition-fps = 120
+cycling-enabled = true
+cycling-directory = "/home/jalhamer/.config/wallpapers/fractalpuccin/macchiato"
+cycling-mode = "shuffle"
