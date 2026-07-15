@@ -57,7 +57,7 @@ surface = "#1e2030"
 elevated = "#24273a"
 fg = "#cad3f5"
 fg-muted = "#b8c0e0"
-primary = "#b7bdf8"
+primary = "#f0c6c6"
 red = "#ed8796"
 yellow = "#eed49f"
 green = "#a6da95"
@@ -75,10 +75,14 @@ format = "{{ percent }}% | {{ temp_c }}℃"
 
 [modules.hyprland-workspaces]
 show-special = false
+divider = ""
 app-icons-show = true
 
 [modules.idle-inhibit]
 format = "{{ state }} ({{ remaining }})"
+
+[modules.keybind-mode]
+left-click = "$XDG_CONFIG_HOME/waybar/scripts/toggle_wvkbd.sh"
 
 [modules.notifications]
 popup-position = "top-center"
@@ -89,6 +93,7 @@ time-format = "24h"
 
 [modules.window-title]
 format = "{{ title }} [{{ app }}]"
+left-click = "$XDG_CONFIG_HOME/waybar/scripts/toggle_nwg-drawer.sh"
 
 [osd]
 position = "top-left"
