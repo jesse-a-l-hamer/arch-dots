@@ -1,20 +1,28 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "model": "ollama/gemma4",
+  "model": "ollama/gemma4:latest",
   "provider": {
     "ollama": {
-      "models": {
-        "gemma4": {
-          "_launch": true,
-          "name": "gemma4"
-        }
-      },
-      "name": "Ollama",
+      "name": "Ollama (local)",
       "npm": "@ai-sdk/openai-compatible",
       "options": {
         "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "gemma4:latest": {
+          "name": "gemma4 - latest (8B/9.6GB)"
+        },
+        "gemma4:26b": {
+          "name": "gemma4 - big (26B/17GB)"
+        },
+        "qwen3.5:latest": {
+          "name": "qwen3.5 - latest (9B/6.6GB)"
+        },
+        "ornith:latest": {
+          "name": "ornith - latest (9B/5.6GB)"
+        }
       }
     }
-  }
+  },
+  "formatter": {}
 }
-
