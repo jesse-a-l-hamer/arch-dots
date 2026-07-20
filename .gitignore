@@ -55,3 +55,4 @@ __pycache__
 /.maxima/test-directory-cached/5_49_0/ecl/26_5_5
 /.docker
 /.rustowl
+/.config/termusic/server.toml
