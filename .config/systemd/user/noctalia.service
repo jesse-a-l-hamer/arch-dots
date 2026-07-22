@@ -1,0 +1,18 @@
+[Unit]
+Description=Noctalia Desktop Shell
+PartOf=graphical-session.target
+After=graphical-session.target
+StartLimitIntervalSec=30
+StartLimitBurst=5
+ConditionEnvironment=WAYLAND_DISPLAY
+
+[Service]
+ExecCondition=/lib/systemd/systemd-xdg-autostart-condition "wlroots:sway:Wayfire:labwc:Hyprland" ""
+ExecStart=/usr/bin/noctalia
+ExecReload=/usr/bin/noctalia msg config-reload
+Restart=on-failure
+RestartSec=3
+Slice=session-graphical.slice
+
+[Install]
+WantedBy=graphical-session.target
