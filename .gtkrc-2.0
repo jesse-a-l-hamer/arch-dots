@@ -2,7 +2,7 @@
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
 include "/home/jalhamer/.gtkrc-2.0.mine"
-gtk-theme-name="catppuccin-macchiato-flamingo-standard+default"
+gtk-theme-name="adw-gtk3"
 gtk-icon-theme-name="Papirus-Dark"
 gtk-font-name="VictorMono Nerd Font Propo Semi-Bold 11"
 gtk-cursor-theme-name="catppuccin-macchiato-dark-cursors"
