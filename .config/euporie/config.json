@@ -6,10 +6,46 @@
     "show_cell_borders": true,
     "show_side_bar": true,
     "side_bar_width": 24,
-    "syntax_theme": "euporie",
+    "accent_color": "#F0C6C6",
+    "syntax_theme": "one-dark",
+    "color_scheme": "auto",
     "recent_files": [],
-    "color_scheme": "default",
     "edit_mode": "vi",
-    "line_numbers": false
+    "line_numbers": false,
+    "enable_language_servers": true,
+    "side_bar_panel_index": 0,
+    "formatters": [
+      {
+        "command": [
+          "ruff",
+          "format",
+          "-"
+        ],
+        "languages": [
+          "python"
+        ]
+      }
+    ],
+    "graphics": "kitty",
+    "language_servers": {
+      "ruff": {
+        "command": [
+          "ruff",
+          "server"
+        ],
+        "languages": [
+          "python"
+        ]
+      },
+      "ty": {
+        "command": [
+          "ty",
+          "server"
+        ],
+        "languages": [
+          "python"
+        ]
+      }
+    }
   }
 }
