@@ -56,3 +56,7 @@ __pycache__
 /.docker
 /.rustowl
 /.config/termusic/server.toml
+/.config/elinks/bookmarks
+/.config/elinks/globhist
+/.config/elinks/gotohist
+/.config/yt-x/my/recents.json
