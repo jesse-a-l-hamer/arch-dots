@@ -20,6 +20,9 @@
         },
         "ornith:latest": {
           "name": "ornith - latest (9B/5.6GB)"
+        },
+        "ornith:35b": {
+          "name": "ornith - big (35B/31GB)"
         }
       }
     }
